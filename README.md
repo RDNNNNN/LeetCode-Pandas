@@ -80,4 +80,3 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.take([0, 1, 2])
 ```
-# LeetCode-Pandas
