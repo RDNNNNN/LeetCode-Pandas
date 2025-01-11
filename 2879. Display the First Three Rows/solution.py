@@ -44,13 +44,13 @@ import pandas as pd
 
 
 # slice
-def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
-    return employees[:3]
+# def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+#     return employees[:3]
 
 
 # head()
-# def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
-#     return employees.head(3)
+def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+    return employees.head(3)
 
 
 # iloc()
