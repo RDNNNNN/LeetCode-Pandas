@@ -1,5 +1,4 @@
-# 2879. Display the First Three Rows
-# 顯示前三行資料
+# 2879. Display the First Three Rows (顯示前三行資料)
 
 # DataFrame: employees
 # +-------------+--------+
