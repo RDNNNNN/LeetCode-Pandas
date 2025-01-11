@@ -83,15 +83,15 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.take([0, 1, 2])
 ```
 
-## 2884. Modify Columns
+## 2884. Modify Columns (修改欄位)
 
 ```python
 DataFrame employees
 +-------------+--------+
-| Column Name | Type |
+| Column Name | Type   |
 +-------------+--------+
-| name | object |
-| salary | int |
+| name        | object |
+| salary      | int    |
 +-------------+--------+
 ```
 
