@@ -43,31 +43,33 @@
 import pandas as pd
 
 
-# head() 寫法
+# slice
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
-    return employees.head(3)
+    return employees[:3]
 
 
-# iloc() 寫法
+# head()
+# def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+#     return employees.head(3)
+
+
+# iloc()
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.iloc[0:3]
 
-# loc() 寫法
+# loc()
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.loc[0:2]
 
-# slice 切片寫法
-# def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
-#     return employees[:3]
 
-# query() 寫法
+# query()
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.query('index < 3')
 
-# filter() 寫法
+# filter()
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.filter(items=range(3), axis=0)
 
-# take() 寫法
+# take()
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.take([0, 1, 2])
