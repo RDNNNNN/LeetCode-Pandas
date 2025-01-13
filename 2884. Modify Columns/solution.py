@@ -48,29 +48,48 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 
 # apply()
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
-#     employees['salary'] = employees['salary'].apply(lambda x : x *2)
+#     employees["salary"] = employees["salary"].apply(lambda x: x * 2)
 #     return employees
+
+# apply() 接受 lambda 表達式，將每個值乘以 2
+
 
 # loc()
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
-#     employees.loc[:, 'salary'] = employees.loc[:, 'salary'] * 2
+#     employees.loc[:, "salary"] = employees.loc[:, "salary"] * 2
 #     return employees
+
+# loc[:, 'salary'] 選取所有列的 salary 欄位
+
 
 # assign()
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
-#     return employees.assign(salary=employees['salary'] * 2)
+#     return employees.assign(salary=employees["salary"] * 2)
+
+# assign() 會返回一個新的 DataFrame
+
 
 # mul()
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
-#     employees['salary'] = employees['salary'].mul(2)
+#     employees["salary"] = employees["salary"].mul(2)
 #     return employees
+
+# mul() 是 element-wise 的乘法運算。
+# 效果跟 * 2 相同，但可以保持程式的一致性，尤其在有更多欄位運算。
+
 
 # transform()
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
-#     employees['salary'] = employees['salary'].transform(lambda x : x * 2)
+#     employees["salary"] = employees["salary"].transform(lambda x: x * 2)
 #     return employees
+
+# transform() 與 apply() 類似，但更適合用於 DataFrame的欄位轉換
+
 
 # eval()
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
-#     employees.eval('salary = salary * 2', inplace = True)
+#     employees.eval("salary = salary * 2", inplace=True)
 #     return employees
+
+# eval() 支援類似 SQL 的語法，可以對欄位直接信行操作
+# inplace=True 表示修改原本的 DataFrame
