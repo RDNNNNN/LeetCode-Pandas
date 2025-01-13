@@ -37,6 +37,7 @@
 # +---------+--------+
 # Explanation:
 # Every salary has been doubled.
+# 每個薪資都被加倍了。
 
 import pandas as pd
 
