@@ -55,7 +55,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.head(3)
 
 # head() 從頭到第幾個
-# head(3) 從頭到第 3 個 ，即第 0 到第 2列
+# head(3) 從頭到第 3 個 ，即第 0 到第 2 列
 
 
 # iloc()
@@ -63,7 +63,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.iloc[0:3]
 
 # iloc() 不包含最後索引
-# iloc[0:3] 為第 0 到第 2列
+# iloc[0:3] 為第 0 到第 2 列
 
 
 # loc()
@@ -71,7 +71,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.loc[0:2]
 
 # loc() 會包含最後索引
-# loc[0:2] 為第 0 到第 2列
+# loc[0:2] 為第 0 到第 2 列
 
 
 # query()
