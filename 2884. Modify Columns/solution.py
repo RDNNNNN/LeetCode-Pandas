@@ -7,6 +7,7 @@
 # | name        | object |
 # | salary      | int    |
 # +-------------+--------+
+
 # A company intends to give its employees a pay rise.
 # 一間公司打算給員工加薪
 # Write a solution to modify the salary column by multiplying each salary by 2.
@@ -26,6 +27,7 @@
 # | Mia     | 62509  |
 # | Ulysses | 54866  |
 # +---------+--------+
+
 # Output:
 # +---------+--------+
 # | name    | salary |
@@ -35,6 +37,7 @@
 # | Mia     | 125018 |
 # | Ulysses | 109732 |
 # +---------+--------+
+
 # Explanation:
 # Every salary has been doubled.
 # 每個薪資都被加倍了。
