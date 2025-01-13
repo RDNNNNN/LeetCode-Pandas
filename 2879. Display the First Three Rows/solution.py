@@ -9,6 +9,7 @@
 # | department  | object |
 # | salary      | int    |
 # +-------------+--------+
+
 # Write a solution to display the first 3 rows of this DataFrame.
 # 撰寫一個解決方案來顯示此資料表的前三行資料。
 
@@ -26,6 +27,7 @@
 # | 49          | Jonathan  | HumanResources        | 23793  |
 # | 43          | Khaled    | Administration        | 40454  |
 # +-------------+-----------+-----------------------+--------+
+
 # Output:
 # +-------------+---------+-------------+--------+
 # | employee_id | name    | department  | salary |
@@ -34,6 +36,7 @@
 # | 90          | Alice   | Sales       | 11096  |
 # | 9           | Tatiana | Engineering | 33805  |
 # +-------------+---------+-------------+--------+
+
 # Explanation:
 # Only the first 3 rows are displayed.
 # 僅顯示資料表中的前三行資料。
