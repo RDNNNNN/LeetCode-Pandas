@@ -49,7 +49,9 @@ Output:
 
 ### 僅顯示資料表中的前三行資料。
 
-## Code
+---
+
+### Code
 
 ```python
 import pandas as pd
@@ -139,7 +141,9 @@ Output:
 
 ### 每個薪資都被加倍了。
 
-## Code
+---
+
+### Code
 
 ```python
 import pandas as pd
