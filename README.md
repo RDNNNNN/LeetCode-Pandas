@@ -1,6 +1,6 @@
-## 2879. Display the First Three Rows (顯示前三行資料)
+## 2879. Display the First Three Rows 顯示前三行資料
 
-```python
+```py
 DataFrame: employees
 +-------------+--------+
 | Column Name | Type   |
@@ -16,11 +16,11 @@ DataFrame: employees
 
 ### 撰寫一個解決方案來顯示此資料表的前三行資料。
 
----
+## 範例
 
 ### Example 1:
 
-```python
+```py
 Input:
 DataFrame employees
 +-------------+-----------+-----------------------+--------+
@@ -112,7 +112,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 
 ## 2884. Modify Columns (修改欄位)
 
-```python
+```py
 DataFrame employees
 +-------------+--------+
 | Column Name | Type   |
@@ -138,7 +138,7 @@ DataFrame employees
 
 ### Example 1:
 
-```python
+```py
 Input:
 DataFrame employees
 +---------+--------+
