@@ -87,7 +87,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.filter(items=range(3), axis=0)
 
 # filter() 寫法
-# filter()搭配索引來選取前 3 列
+# filter() 搭配索引來選取前 3 列
 # items=range(3)，表示選取第 0 到第 2 列
 # axis=0 表示作用在列上
 
