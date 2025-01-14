@@ -110,7 +110,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # take() 接受一個索引列表，會根據索引來選取列。
 ```
 
-## 2884. Modify Columns (修改欄位)
+## 2884. Modify Columns 修改欄位
 
 ```py
 DataFrame employees
