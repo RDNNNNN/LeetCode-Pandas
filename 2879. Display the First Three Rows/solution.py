@@ -1,4 +1,4 @@
-# 2879. Display the First Three Rows (顯示前三行資料)
+# 2879. Display the First Three Rows 顯示前三行資料
 
 # DataFrame: employees
 # +-------------+--------+
@@ -13,6 +13,7 @@
 # Write a solution to display the first 3 rows of this DataFrame.
 # 撰寫一個解決方案來顯示此資料表的前三行資料。
 
+# 範例
 # Example 1:
 
 # Input:
