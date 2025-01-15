@@ -44,7 +44,7 @@ Output:
 +-------------+---------+-------------+--------+
 ```
 
-### Explanation:
+### Explanation 解釋:
 
 Only the first 3 rows are displayed.
 
@@ -161,7 +161,7 @@ Output:
 +---------+--------+
 ```
 
-### Explanation:
+### Explanation 解釋:
 
 Every salary has been doubled.
 
