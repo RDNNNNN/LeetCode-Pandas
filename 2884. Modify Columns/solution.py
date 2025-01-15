@@ -88,7 +88,7 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees
 
 # transform() 寫法
-# transform() 與 apply() 類似，但更適合用於 DataFrame的欄位轉換
+# transform() 與 apply() 類似，但更適合用於 DataFrame 的欄位轉換
 
 
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
@@ -96,5 +96,5 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees
 
 # eval() 寫法
-# eval() 支援類似 SQL 的語法，可以對欄位直接信行操作
+# eval() 支援類似 SQL 的語法，可以對欄位直接進行操作
 # inplace=True 表示修改原本的 DataFrame
