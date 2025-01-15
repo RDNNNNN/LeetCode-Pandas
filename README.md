@@ -12,9 +12,9 @@ DataFrame: employees
 +-------------+--------+
 ```
 
-### Write a solution to display the first 3 rows of this DataFrame.
+Write a solution to display the first 3 rows of this DataFrame.
 
-### 撰寫一個解決方案來顯示此資料表的前三行資料。
+撰寫一個解決方案來顯示此資料表的前三行資料。
 
 ## 範例
 
@@ -46,9 +46,9 @@ Output:
 
 ### Explanation:
 
-### Only the first 3 rows are displayed.
+Only the first 3 rows are displayed.
 
-### 僅顯示資料表中的前三行資料。
+僅顯示資料表中的前三行資料。
 
 ## Code
 
@@ -122,17 +122,17 @@ DataFrame employees
 +-------------+--------+
 ```
 
-### A company intends to give its employees a pay rise.
+A company intends to give its employees a pay rise.
 
-### 一間公司打算給員工加薪。
+一間公司打算給員工加薪。
 
-### Write a solution to modify the salary column by multiplying each salary by 2.
+Write a solution to modify the salary column by multiplying each salary by 2.
 
-### 攥寫一個解決方案來將每個薪資乘以 2。
+攥寫一個解決方案來將每個薪資乘以 2。
 
-### The result format is in the following example.
+The result format is in the following example.
 
-### 結果顯示如下
+結果顯示如下
 
 ## 範例
 
@@ -163,9 +163,9 @@ Output:
 
 ### Explanation:
 
-### Every salary has been doubled.
+Every salary has been doubled.
 
-### 每個薪資都被加倍了。
+每個薪資都被加倍了。
 
 ## Code
 
