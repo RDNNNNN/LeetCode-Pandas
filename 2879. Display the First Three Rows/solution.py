@@ -57,7 +57,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 
 # head() 寫法
 # head() 從頭到第幾個
-# head(3) 從頭到第 3 個 ，即第 0 到第 2 列
+# head(3) 從頭到第 3 個，即第 0 到第 2 列
 
 
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
