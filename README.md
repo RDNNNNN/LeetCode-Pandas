@@ -66,8 +66,8 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.head(3)
 
 # head() 寫法
-# head() 從頭到第幾個
-# head(3) 從頭到第 3 個 ，即第 0 到第 2 列
+# head() 從索引 0 開始
+# head(3) 從索引 0 到第 3 個 ，即第 0 到第 2 列
 
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
@@ -98,7 +98,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.filter(items=range(3), axis=0)
 
 # filter() 寫法
-# filter()搭配索引來選取前 3 列
+# filter() 搭配索引來選取前 3 列
 # items=range(3)，表示選取第 0 到第 2 列
 # axis=0 表示作用在列上
 
