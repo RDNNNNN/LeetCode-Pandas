@@ -38,7 +38,7 @@
 # | 9           | Tatiana | Engineering | 33805  |
 # +-------------+---------+-------------+--------+
 
-# Explanation:
+# Explanation 解釋:
 # Only the first 3 rows are displayed.
 # 僅顯示資料表中的前三行資料。
 
