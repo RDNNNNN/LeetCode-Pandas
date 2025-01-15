@@ -39,7 +39,7 @@
 # | Ulysses | 109732 |
 # +---------+--------+
 
-# Explanation:
+# Explanation 解釋:
 # Every salary has been doubled.
 # 每個薪資都被加倍了。
 
