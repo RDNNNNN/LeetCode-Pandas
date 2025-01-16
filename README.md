@@ -16,7 +16,9 @@ Write a solution to display the first 3 rows of this DataFrame.
 
 撰寫一個解決方案來顯示此資料表的前三行資料。
 
-## 範例
+---
+
+### 範例
 
 ### Example 1:
 
@@ -50,7 +52,9 @@ Only the first 3 rows are displayed.
 
 僅顯示資料表中的前三行資料。
 
-## Code
+---
+
+### Code
 
 ```py
 import pandas as pd
@@ -134,7 +138,9 @@ The result format is in the following example.
 
 結果顯示如下
 
-## 範例
+---
+
+### 範例
 
 ### Example 1:
 
@@ -167,7 +173,9 @@ Every salary has been doubled.
 
 每個薪資都被加倍了。
 
-## Code
+---
+
+### Code
 
 ```py
 import pandas as pd
