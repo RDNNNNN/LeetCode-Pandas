@@ -1,4 +1,4 @@
-# 2884. Modify Columns 修改欄位
+## 2884. Modify Columns 修改欄位
 
 # DataFrame employees
 # +-------------+--------+
@@ -15,8 +15,9 @@
 # The result format is in the following example.
 # 結果顯示如下
 
-# 範例
-# Example 1:
+### 範例
+
+### Example 1:
 
 # Input:
 # DataFrame employees
@@ -39,7 +40,8 @@
 # | Ulysses | 109732 |
 # +---------+--------+
 
-# Explanation 解釋:
+### Explanation 解釋:
+
 # Every salary has been doubled.
 # 每個薪資都被加倍了。
 
