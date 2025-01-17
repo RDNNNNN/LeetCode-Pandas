@@ -1,4 +1,4 @@
-# 2879. Display the First Three Rows 顯示前三行資料
+## 2879. Display the First Three Rows 顯示前三行資料
 
 # DataFrame: employees
 # +-------------+--------+
@@ -13,8 +13,9 @@
 # Write a solution to display the first 3 rows of this DataFrame.
 # 撰寫一個解決方案來顯示此資料表的前三行資料。
 
-# 範例
-# Example 1:
+### 範例
+
+###  Example 1:
 
 # Input:
 # DataFrame employees
@@ -38,15 +39,18 @@
 # | 9           | Tatiana | Engineering | 33805  |
 # +-------------+---------+-------------+--------+
 
-# Explanation 解釋:
+### Explanation 解釋:
+
 # Only the first 3 rows are displayed.
 # 僅顯示資料表中的前三行資料。
 
-# Code
+### Code
 import pandas as pd
+
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees[:3]
+
 
 # slice 切片寫法
 # employees[:3] 為第 0 到 第 2 列
