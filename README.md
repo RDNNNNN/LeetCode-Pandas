@@ -1,6 +1,6 @@
 ## 2879. Display the First Three Rows 顯示前三行資料
 
-```py
+```ip
 DataFrame: employees
 +-------------+--------+
 | Column Name | Type   |
@@ -22,7 +22,7 @@ Write a solution to display the first 3 rows of this DataFrame.
 
 ### Example 1:
 
-```py
+```ip
 Input:
 DataFrame employees
 +-------------+-----------+-----------------------+--------+
@@ -56,7 +56,7 @@ Only the first 3 rows are displayed.
 
 ### Code
 
-```py
+```ip
 import pandas as pd
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
@@ -116,7 +116,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 
 ## 2884. Modify Columns 修改欄位
 
-```py
+```ip
 DataFrame employees
 +-------------+--------+
 | Column Name | Type   |
@@ -144,7 +144,7 @@ The result format is in the following example.
 
 ### Example 1:
 
-```py
+```ip
 Input:
 DataFrame employees
 +---------+--------+
@@ -177,7 +177,7 @@ Every salary has been doubled.
 
 ### Code
 
-```py
+```ip
 import pandas as pd
 
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
