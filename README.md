@@ -1,6 +1,6 @@
 ## 2879. Display the First Three Rows 顯示前三行資料
 
-```ip
+```py
 DataFrame: employees
 +-------------+--------+
 | Column Name | Type   |
@@ -22,7 +22,7 @@ Write a solution to display the first 3 rows of this DataFrame.
 
 ### Example 1:
 
-```ip
+```py
 Input:
 DataFrame employees
 +-------------+-----------+-----------------------+--------+
@@ -56,7 +56,7 @@ Only the first 3 rows are displayed.
 
 ### Code
 
-```ip
+```py
 import pandas as pd
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
@@ -116,7 +116,7 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 
 ## 2884. Modify Columns 修改欄位
 
-```ip
+```py
 DataFrame employees
 +-------------+--------+
 | Column Name | Type   |
@@ -130,7 +130,7 @@ A company intends to give its employees a pay rise.
 
 一間公司打算給員工加薪。
 
-Write a solution to modify the salary column by multiplying each salary by 2.
+Write a solution to modify the salary column by multpylying each salary by 2.
 
 攥寫一個解決方案來將每個薪資乘以 2。
 
@@ -144,14 +144,14 @@ The result format is in the following example.
 
 ### Example 1:
 
-```ip
+```py
 Input:
 DataFrame employees
 +---------+--------+
 | name    | salary |
 +---------+--------+
 | Jack    | 19666  |
-| Piper   | 74754  |
+| Ppyer   | 74754  |
 | Mia     | 62509  |
 | Ulysses | 54866  |
 +---------+--------+
@@ -161,7 +161,7 @@ Output:
 | name    | salary |
 +---------+--------+
 | Jack    | 39332  |
-| Piper   | 149508 |
+| Ppyer   | 149508 |
 | Mia     | 125018 |
 | Ulysses | 109732 |
 +---------+--------+
@@ -177,7 +177,7 @@ Every salary has been doubled.
 
 ### Code
 
-```ip
+```py
 import pandas as pd
 
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
