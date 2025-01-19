@@ -56,12 +56,18 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     return employees
 
 
+# import pandas as pd
+
+
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 #     employees["salary"] = employees["salary"].apply(lambda x: x * 2)
 #     return employees
 
 # apply() 寫法
 # apply() 接受 lambda 表達式，將每個值乘以 2
+
+
+# import pandas as pd
 
 
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
@@ -72,11 +78,17 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 # loc[:, 'salary'] 選取所有列的 salary 欄位
 
 
+# import pandas as pd
+
+
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.assign(salary=employees["salary"] * 2)
 
 # assign() 寫法
 # assign() 會返回一個新的 DataFrame
+
+
+# import pandas as pd
 
 
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
@@ -88,12 +100,18 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 # 效果跟 * 2 相同，但可以保持程式的一致性，尤其在有更多欄位運算。
 
 
+# import pandas as pd
+
+
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 #     employees["salary"] = employees["salary"].transform(lambda x: x * 2)
 #     return employees
 
 # transform() 寫法
 # transform() 與 apply() 類似，但更適合用於 DataFrame 的欄位轉換
+
+
+# import pandas as pd
 
 
 # def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
