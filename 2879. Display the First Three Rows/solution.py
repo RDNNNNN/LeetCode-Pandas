@@ -58,12 +58,18 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # employees[:3] 為第 0 到 第 2 列
 
 
+# import pandas as pd
+
+
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.head(3)
 
 # head() 寫法
 # head() 從頭到第幾個
 # head(3) 從頭到第 3 個，即第 0 到第 2 列
+
+
+# import pandas as pd
 
 
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
@@ -74,12 +80,18 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # iloc[0:3] 為第 0 到第 2 列
 
 
+# import pandas as pd
+
+
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.loc[0:2]
 
 # loc() 寫法
 # loc() 會包含最後索引
 # loc[0:2] 為第 0 到第 2 列
+
+
+# import pandas as pd
 
 
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
@@ -90,6 +102,9 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # index < 3 為索引小於 3 的列
 
 
+# import pandas as pd
+
+
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 #     return employees.filter(items=range(3), axis=0)
 
@@ -97,6 +112,9 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # filter() 搭配索引來選取前 3 列
 # items=range(3)，表示選取第 0 到第 2 列
 # axis=0 表示作用在列上
+
+
+# import pandas as pd
 
 
 # def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
