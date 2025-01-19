@@ -20,6 +20,7 @@
 ### Example 1:
 
 # Input:
+
 # DataFrame employees
 # +---------+--------+
 # | name    | salary |
