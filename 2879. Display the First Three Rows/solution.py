@@ -18,6 +18,7 @@
 ###  Example 1:
 
 # Input:
+
 # DataFrame employees
 # +-------------+-----------+-----------------------+--------+
 # | employee_id | name      | department            | salary |
