@@ -67,6 +67,8 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # employees[:3] 為第 0 到 第 2 列
 
 
+import pandas as pd
+
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.head(3)
 
@@ -74,6 +76,8 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # head() 從索引 0 開始
 # head(3) 從索引 0 到第 3 個，即第 0 到第 2 列
 
+
+import pandas as pd
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.iloc[0:3]
@@ -83,6 +87,8 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # iloc[0:3] 為第 0 到第 2 列
 
 
+import pandas as pd
+
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.loc[0:2]
 
@@ -90,6 +96,8 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # loc() 會包含最後索引
 # loc[0:2] 為第 0 到第 2 列
 
+
+import pandas as pd
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.query('index < 3')
@@ -99,6 +107,8 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # index < 3 為索引小於 3 的列
 
 
+import pandas as pd
+
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.filter(items=range(3), axis=0)
 
@@ -107,6 +117,8 @@ def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
 # items=range(3)，表示選取第 0 到第 2 列
 # axis=0 表示作用在列上
 
+
+import pandas as pd
 
 def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.take([0, 1, 2])
@@ -187,6 +199,8 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
      return employees
 
 
+import pandas as pd
+
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees['salary'] = employees['salary'].apply(lambda x : x *2)
     return employees
@@ -194,6 +208,8 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 # apply() 寫法
 # apply() 接受 lambda 表達式，將每個值乘以 2
 
+
+import pandas as pd
 
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees.loc[:, 'salary'] = employees.loc[:, 'salary'] * 2
@@ -203,12 +219,16 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 # loc[:, 'salary'] 選取所有列的 salary 欄位
 
 
+import pandas as pd
+
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     return employees.assign(salary=employees['salary'] * 2)
 
 # assign() 寫法
 # assign() 會返回一個新的 DataFrame
 
+
+import pandas as pd
 
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees['salary'] = employees['salary'].mul(2)
@@ -219,6 +239,8 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 # 效果跟 * 2 相同，但可以保持程式的一致性，尤其在有更多欄位運算。
 
 
+import pandas as pd
+
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees['salary'] = employees['salary'].transform(lambda x : x * 2)
     return employees
@@ -226,6 +248,8 @@ def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
 # transform() 寫法
 # transform() 與 apply() 類似，但更適合用於 DataFrame 的欄位轉換
 
+
+import pandas as pd
 
 def modifySalaryColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees.eval('salary = salary * 2', inplace = True)
@@ -327,6 +351,8 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # axis=0 表示垂直合
 
 
+import pandas as pd
+
 def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     return df1.append(df2, ignore_index=True)
 
@@ -335,6 +361,8 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # append() 會直接將 df2 的資料附加到 df1 後面
 # ignore_index=Ture 表示重新索引，避免索引重複
 
+
+import pandas as pd
 
 def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     return pd.merge(df1, df2, how='outer')
@@ -345,6 +373,8 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # how="outer" 表示取兩個 DataFrame 的 Union (聯集，將兩個資料合併並保留所有的唯一值)
 
 
+import pandas as pd
+
 def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     return df1.T.join(df2.T).T
 
@@ -353,6 +383,8 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # T 為轉置操作，可以將 DataFrame 的欄和列交換位置
 # join() 會基於索引進行合併
 
+
+import pandas as pd
 
 def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     return df1.combine_first(df2)
@@ -363,6 +395,8 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # combine_first() 會用 df1 的值填補 df2 的缺少值
 
 
+import pandas as pd
+
 def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     combined = pd.concat([df1, df2])
     return combined.reset_index(drop=True)
@@ -371,6 +405,7 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # 合併兩個 DataFrame 重新排列索引，並移除原本的索引
 
 
+import pandas as pd
 import numpy as np
 
 def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
