@@ -45,6 +45,7 @@
 # 僅顯示資料表中的前三行資料。
 
 ### Code
+
 import pandas as pd
 
 
