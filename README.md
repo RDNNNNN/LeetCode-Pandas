@@ -24,6 +24,7 @@ Write a solution to display the first 3 rows of this DataFrame.
 
 ```py
 Input:
+
 DataFrame employees
 +-------------+-----------+-----------------------+--------+
 | employee_id | name      | department            | salary |
