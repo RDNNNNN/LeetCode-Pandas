@@ -334,7 +334,6 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # Pandas 1.4.0 開始已停用此方法。
 # append() 會直接將 df2 的資料附加到 df1 後面
 # ignore_index=Ture 表示重新索引，避免索引重複
-#
 
 def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     return pd.merge(df1, df2, how='outer')
