@@ -1,6 +1,5 @@
 ## 2888. Reshape Data: Concatenate 重塑資料: 連接
 
-
 # DataFrame df1
 # +-------------+--------+
 # | Column Name | Type   |
@@ -18,7 +17,6 @@
 # | name        | object |
 # | age         | int    |
 # +-------------+--------+
-
 
 # Write a solution to concatenate these two DataFrames vertically into one DataFrame.
 
@@ -87,17 +85,14 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 #     return df1.append(df2, ignore_index=True)
 
-
 # append() 寫法
 # Pandas 1.4.0 開始已停用此方法。
 # append() 會直接將 df2 的資料附加到 df1 後面
 # ignore_index=Ture 表示重新索引，避免索引重複
-#
 
 
 # def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 #     return pd.merge(df1, df2, how="outer")
-
 
 # merge() 寫法
 # 通常用於 Key 的合併，也可以用於垂直合併
