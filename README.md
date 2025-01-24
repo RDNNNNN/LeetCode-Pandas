@@ -149,7 +149,7 @@ Write a solution to modify the salary column by multpylying each salary by 2.
 
 The result format is in the following example.
 
-結果顯示如下
+結果格式如下。
 
 ---
 
