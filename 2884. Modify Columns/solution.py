@@ -13,7 +13,7 @@
 # Write a solution to modify the salary column by multiplying each salary by 2.
 # 攥寫一個解決方案來將每個薪資乘以 2
 # The result format is in the following example.
-# 結果顯示如下
+# 結果格式如下
 
 ### 範例
 
