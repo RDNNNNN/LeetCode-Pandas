@@ -412,8 +412,8 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
     combined_array = np.vstack([df1.values, df2.values])
     return pd.DataFrame(combined_array, columns=df1.columns)
 
-# numpy 寫法
-# numpy 可以達到更底層的控制
+# NumPy 寫法
+# NumPy 可以達到更底層的控制
 # np.vstack() 將兩個陣列垂直合併
 # 使用 pd.DataFrame() 將結果轉成 DataFrame
 ```
