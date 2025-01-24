@@ -82,6 +82,9 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # axis=0 表示垂直合
 
 
+# import pandas as pd
+
+
 # def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 #     return df1.append(df2, ignore_index=True)
 
@@ -89,6 +92,9 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # Pandas 1.4.0 開始已停用此方法。
 # append() 會直接將 df2 的資料附加到 df1 後面
 # ignore_index=Ture 表示重新索引，避免索引重複
+
+
+# import pandas as pd
 
 
 # def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
@@ -100,6 +106,9 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # how="outer" 表示取兩個 DataFrame 的 Union (聯集，將兩個資料合併並保留所有的唯一值)
 
 
+# import pandas as pd
+
+
 # def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 #     return df1.T.join(df2.T).T
 
@@ -107,6 +116,9 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # 通常用於橫向合併，但可以透過 T 轉置操作模擬垂直合併
 # T 為轉置操作，可以將 DataFrame 的欄和列交換位置
 # join() 會基於索引進行合併
+
+
+# import pandas as pd
 
 
 # def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
@@ -118,6 +130,9 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # combine_first() 會用 df1 的值填補 df2 的缺少值
 
 
+# import pandas as pd
+
+
 # def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 #     combined = pd.concat([df1, df2])
 #     return combined.reset_index(drop=True)
@@ -126,13 +141,14 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 # 合併兩個 DataFrame 重新排列索引，並移除原本的索引
 
 
+# import pandas as pd
 # import numpy as np
 
 # def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 #     combined_array = np.vstack([df1.values, df2.values])
 #     return pd.DataFrame(combined_array, columns=df1.columns)
 
-# numpy 寫法
-# numpy 可以達到更底層的控制
+# NumPy 寫法
+# NumPy 可以達到更底層的控制
 # np.vstack() 將兩個陣列垂直合併
 # 使用 pd.DataFrame() 將結果轉成 DataFrame
