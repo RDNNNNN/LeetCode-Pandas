@@ -11,7 +11,8 @@
 # +-------------+--------+
 
 # Write a solution to display the first 3 rows of this DataFrame.
-# 撰寫一個解決方案來顯示此資料表的前三行資料。
+
+# 撰寫一個解決方案來顯示此資料表的前三行資料
 
 ### 範例
 
