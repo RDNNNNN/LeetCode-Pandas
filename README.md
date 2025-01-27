@@ -16,7 +16,7 @@
 
 `low_fats` is an `ENUM` (category) of type ('Y', 'N') where `Y` means this product is low fat and `N` means it is not.
 
-`low_fats` 是一種 `ENUM` (類別)，其中 `'Y'` 表示為這個產品為低脂，`'N'` 則不為低脂產品。
+`low_fats` 是一種 `ENUM` (類別)，其中 `Y` 表示為這個產品為低脂，`N` 則不為低脂產品。
 
 `recyclable` is an `ENUM` (category) of types ('Y', 'N') where `Y` means this product is recyclable and `N` means it is not.
 
