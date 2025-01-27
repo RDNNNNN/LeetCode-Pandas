@@ -12,7 +12,7 @@
 
 `product_id` is the primary key (column with unique values) for this table.
 
-`Product_id` 為表格的 primary key （具有唯一值的欄位）。
+`product_id` 為表格的 primary key （具有唯一值的欄位）。
 
 `low_fats` is an `ENUM` (category) of type ('Y', 'N') where `Y` means this product is low fat and `N` means it is not.
 
