@@ -181,7 +181,8 @@ Teacher 1:
 - 他們在第 3 系所跟第 4 系所教授第 2 科目
 - They teach subject 3 in department 3.
 - 他們在第 3 系所教授第 3 科目
-  Teacher 2:
+
+Teacher 2:
 - They teach subject 1 in department 1.
 - 他們在第 1 系所教授第 1 科目
 - They teach subject 2 in department 1.
