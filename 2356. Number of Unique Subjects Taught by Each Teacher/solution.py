@@ -8,7 +8,6 @@
 # | dept_id     | int  |
 # +-------------+------+
 
-
 # (subject_id, dept_id) is the primary key (combinations of columns with unique values) of this table.
 
 # subject_id 跟 dept_id 為表格的 primary key (具有唯一值的 columns 組合)
