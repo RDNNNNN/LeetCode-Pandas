@@ -47,7 +47,7 @@
 
 # The data types of the column grade is converted to int.
 
-# 將 grade column 的資料型別轉換為 int。
+# 將 grade column 的資料型別轉換為 int
 
 ### Code
 
