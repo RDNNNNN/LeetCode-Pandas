@@ -979,7 +979,7 @@ Output:
 
 `charlie@example.net` is invalid because the domain does not end with .com.
 
-charlie@example.net 無效，因為網域不以 `.com` 結尾。
+`charlie@example.net` 無效，因為網域不以 `.com` 結尾。
 
 `david@domain.com` is valid because it meets all criteria.
 
@@ -989,7 +989,7 @@ charlie@example.net 無效，因為網域不以 `.com` 結尾。
 
 `eve@invalid` 無效，因為網域不以 `.com` 結尾。
 
-Result table is ordered by user_id in ascending order.
+Result table is ordered by `user_id` in ascending order.
 
 結果表格依照 `user_id` 升序排列。
 
