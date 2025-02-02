@@ -903,8 +903,7 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 +-----------------+---------+
 ```
 
-
-(user_id) is the unique key for this table.
+`user_id` is the unique key for this table.
 
 `user_id` 為該表格的唯一值
 
@@ -920,11 +919,11 @@ A valid email address meets the following criteria:
 
 有效的電子郵件地址符合以下條件
 
-It contains exactly one @ symbol.
+It contains exactly one `@` symbol.
 
 包含一個 `@` 符號
 
-It ends with .com.
+It ends with `.com`.
 
 以 `.com` 結尾
 
@@ -932,13 +931,15 @@ The part before the `@` symbol contains only alphanumeric characters and undersc
 
 `@` 符號以前的部分只有包含字母數字和底線
 
-The part after the @ symbol and before .com contains a domain name that contains only letters.
+The part after the `@` symbol and before .com contains a domain name that contains only letters.
 
 `@` 符號之後的和 `.com` 之前的部分只有包含字母的網域
 
 Return the result table ordered by user_id in ascending order.
 
 回傳以 `user_id` 升序排列的結果表格
+
+---
 
 ### 範例
 
