@@ -36,7 +36,7 @@ The result format is in the following example.
 
 ---
 
-### Example 1 範例:
+### Example 範例:
 
 ```py
 Input:
@@ -143,7 +143,7 @@ The result format is shown in the following example.
 
 結果格式如下。
 
-### Example 1 範例:
+### Example 範例:
 
 ```py
 Input:
@@ -243,7 +243,7 @@ Write a solution to display the first 3 rows of this DataFrame.
 
 ---
 
-### Example 1 範例:
+### Example 範例:
 
 ```py
 Input:
@@ -374,7 +374,7 @@ The result format is in the following example.
 
 結果顯示如下。
 
-### Example 1 範例:
+### Example 範例:
 
 ```py
 Input:
@@ -507,7 +507,7 @@ The result format is in the following example.
 
 ---
 
-### Example 1 範例:
+### Example 範例:
 
 ```py
 Input:
@@ -638,7 +638,7 @@ The result format is in the following example.
 
 結果格式如下。
 
-### Example 1 範例:
+### Example 範例:
 
 ```py
 Input:
@@ -754,7 +754,7 @@ The result format is in the following example.
 
 ---
 
-### Example 1 範例:
+### Example 範例:
 
 ```py
 Input:
