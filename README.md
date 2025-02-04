@@ -36,9 +36,7 @@ The result format is in the following example.
 
 ---
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input:
@@ -145,9 +143,7 @@ The result format is shown in the following example.
 
 結果格式如下。
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input:
@@ -247,9 +243,7 @@ Write a solution to display the first 3 rows of this DataFrame.
 
 ---
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input:
@@ -380,9 +374,7 @@ The result format is in the following example.
 
 結果顯示如下。
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input:
@@ -515,9 +507,7 @@ The result format is in the following example.
 
 ---
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input:
@@ -648,9 +638,7 @@ The result format is in the following example.
 
 結果格式如下。
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input:
@@ -766,9 +754,7 @@ The result format is in the following example.
 
 ---
 
-### 範例
-
-### Example 1:
+### Example 1 範例:
 
 ```py
 Input:
@@ -941,9 +927,7 @@ Return the result table ordered by user_id in ascending order.
 
 ---
 
-### 範例
-
-### Example:
+### Example 範例:
 
 ```py
 
