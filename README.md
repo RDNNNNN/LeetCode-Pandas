@@ -1012,4 +1012,9 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 # [a-zA-Z] 網域的部分只包含小寫 a 到 z，大寫 A 到 Z
 # \.com$ 必須以 .com 結尾
 # 結合起來就是字串開頭符合小寫 a 到 z，大寫 A 到 Z，數字 0 到 9 以及底線 _，包含 @，網域部分為小寫 a 到 z，大寫 A 到 Z，最後以 .com 結尾
+# str.match() 來檢查 email 是否符合正則表達式
+# na=Flase 如果 email 欄位為 NaN，則會視為不符合
+# sort_values() 依照 user_id 升序排列
+# reset_index() 重置索引，因為篩選後，可能有些索引會被跳過
+# drop=True 確保舊的索引不會變成新欄位
 ```
