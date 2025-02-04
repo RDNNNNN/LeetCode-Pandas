@@ -999,10 +999,17 @@ Result table is ordered by `user_id` in ascending order.
 
 ```py 
 import pandas as pd
-import re
 
 def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
     pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
     valid_emails = users[users['email'].str.match(pattern, na=False)]
     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
+
+# 正則表達式需要使用 r''，類似 f 字串
+# ^ 為字串開頭
+# [a-zA-Z0-9_] 包含小寫 a 到 z，大寫 A 到 Z，數字 0 到 9，還有底線 _
+# @ 包含 @
+# [a-zA-Z] 網域的部分只包含小寫 a 到 z，大寫 A 到 Z
+# \.com$ 必須以 .com 結尾
+# 結合起來就是字串開頭符合小寫 a 到 z，大寫 A 到 Z，數字 0 到 9 以及底線 _，包含 @，網域部分為小寫 a 到 z，大寫 A 到 Z，最後以 .com 結尾
 ```
