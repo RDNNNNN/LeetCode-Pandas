@@ -1006,14 +1006,14 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 import pandas as pd
 import re
 
-def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
-    """ 方法 1: 使用 str.fullmatch() (更嚴格的匹配) """
+def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:"
     pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
     valid_emails = users[users['email'].str.fullmatch(pattern, na=False)]
     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
 
 # fullmatch() 會確保整個字串需要完全符合，不能有多餘的字元
 # 效率高但只適用於 Pandas
+
 
 import pandas as pd
 import re
@@ -1022,7 +1022,6 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
     pattern = re.compile(r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$')
     def is_valid_email(email):
         return bool(pattern.fullmatch(email))
-    
      valid_emails = users[users['email'].apply(is_valid_email)]
     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
     
