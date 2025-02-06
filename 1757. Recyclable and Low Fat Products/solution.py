@@ -60,7 +60,7 @@
 
 # Only products 1 and 3 are both low fat and recyclable.
 
-# 只有產品 1 跟 3 是低脂且可以被回收的。
+# 只有產品 1 跟 3 是低脂且可以被回收的
 
 ### Code
 
