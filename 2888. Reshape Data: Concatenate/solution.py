@@ -75,7 +75,7 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 
 
 # concat() 寫法
-# pd.concat() 預設會沿著 row 方向合併
+# pd.concat() 預設會沿著行 (rows) 方向合併
 # axis=0 表示垂直合
 
 
