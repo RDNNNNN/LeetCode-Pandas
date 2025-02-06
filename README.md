@@ -12,27 +12,27 @@
 
 `product_id` is the primary key (column with unique values) for this table.
 
-`product_id` 為表格的 primary key （具有唯一值的欄位）。
+`product_id` 為表格的 primary key （具有唯一值的欄位）
 
 `low_fats` is an `ENUM` (category) of type ('Y', 'N') where `Y` means this product is low fat and `N` means it is not.
 
-`low_fats` 是一種 `ENUM` (類別)，其中 `Y` 表示這個產品為低脂，`N` 則不為低脂產品。
+`low_fats` 是一種 `ENUM` (類別)，其中 `Y` 表示這個產品為低脂，`N` 則不為低脂產品
 
 `recyclable` is an `ENUM` (category) of types ('Y', 'N') where `Y` means this product is recyclable and `N` means it is not.
 
-`recyclable` 是一種 `ENUM` (類別)，其中 `Y` 表示這個產品可回收，`N` 則不能被回收。
+`recyclable` 是一種 `ENUM` (類別)，其中 `Y` 表示這個產品可回收，`N` 則不能被回收
 
 Write a solution to find the ids of products that are both low fat and recyclable.
 
-寫出一個解決方案來尋找低脂且可回收的產品 `ID`。
+寫出一個解決方案來尋找低脂且可回收的產品 `ID`
 
 Return the result table in any order.
 
-以任意順序回傳結果。
+以任意順序回傳結果
 
 The result format is in the following example.
 
-結果格式如下。
+結果格式如下
 
 ---
 
@@ -64,7 +64,7 @@ Output:
 
 Only products 1 and 3 are both low fat and recyclable.
 
-只有產品 `1` 跟 `3` 是低脂且可以被回收的。
+只有產品 `1` 跟 `3` 是低脂且可以被回收的
 
 ---
 
@@ -125,23 +125,23 @@ def find_products(products: pd.DataFrame) -> pd.DataFrame:
 
 (subject_id, dept_id) is the primary key (combinations of columns with unique values) of this table.
 
-`subject_id` 跟 `dept_id` 為表格的 primary key (具有唯一值的 columns 組合)。
+`subject_id` 跟 `dept_id` 為表格的 primary key (具有唯一值的列組合)
 
 Each row in this table indicates that the teacher with `teacher_id` teaches the subject `subject_id` in the department `dept_id`.
 
-該表中的每一個 row 具有 `teacher_id` 的教師以及科目 `subject_id` 還有系所 `dept_id`。
+該表中的每一個 row 具有 `teacher_id` 的教師以及科目 `subject_id` 還有系所 `dept_id`
 
 Write a solution to calculate the number of unique subjects each teacher teaches in the university.
 
-撰寫一個解決方案來計算每個老師在大學教授的唯一科目數量。
+撰寫一個解決方案來計算每個老師在大學教授的唯一科目數量
 
 Return the result table in any order
 
-回傳任意順序的結果。
+回傳任意順序的結果
 
 The result format is shown in the following example.
 
-結果格式如下。
+結果格式如下
 
 ### Example 範例:
 
@@ -239,7 +239,7 @@ DataFrame: employees
 
 Write a solution to display the first 3 rows of this DataFrame.
 
-撰寫一個解決方案來顯示此資料表的前三行資料。
+撰寫一個解決方案來顯示此資料表的前三行(rows)資料
 
 ---
 
@@ -274,7 +274,7 @@ Output:
 
 Only the first 3 rows are displayed.
 
-僅顯示資料表中的前三行資料。
+僅顯示資料表中的前三行資料
 
 ---
 
@@ -364,15 +364,15 @@ DataFrame employees
 
 A company plans to provide its employees with a bonus.
 
-一間公司計畫給員工提供獎金。
+一間公司計畫給員工提供獎金
 
 Write a solution to create a new column name `bonus` that contains the doubled values of the `salary` column.
 
-撰寫一個解決方案名為 `bonus` 的新列，值為 `salary` 的兩倍。
+撰寫一個解決方案名為 `bonus` 的新列，值為 `salary` 的兩倍
 
 The result format is in the following example.
 
-結果顯示如下。
+結果顯示如下
 
 ### Example 範例:
 
@@ -407,7 +407,7 @@ Output:
 
 A new column bonus is created by doubling the value in the column salary.
 
-建立名為 `bonus` 的新列並且值為 `salay` 的兩倍。
+建立名為 `bonus` 的新列並且值為 `salay` 的兩倍
 
 ---
 
@@ -495,15 +495,15 @@ DataFrame employees
 
 A company intends to give its employees a pay rise.
 
-一間公司打算給員工加薪。
+一間公司打算給員工加薪
 
 Write a solution to modify the salary column by multpylying each salary by 2.
 
-攥寫一個解決方案來將每個薪資乘以 2。
+攥寫一個解決方案來將每個薪資乘以 2
 
 The result format is in the following example.
 
-結果格式如下。
+結果格式如下
 
 ---
 
@@ -537,7 +537,7 @@ Output:
 
 Every salary has been doubled.
 
-每個薪資都被加倍了。
+每個薪資都被加倍了
 
 ---
 
@@ -628,15 +628,15 @@ DataFrame students
 
 Write a solution to correct the errors:
 
-撰寫一個解決方案來修正錯誤。
+撰寫一個解決方案來修正錯誤
 
 The grade column is stored as floats, convert it to integers.
 
-成績 column 為浮點數，將其轉為整數。
+成績的列 (column) 為浮點數，將其轉為整數
 
 The result format is in the following example.
 
-結果格式如下。
+結果格式如下
 
 ### Example 範例:
 
@@ -663,7 +663,7 @@ Output:
 
 The data types of the column grade is converted to int.
 
-將 grade column 的資料型別轉換為 int。
+將 grade 列 (columns) 的資料型別轉換為 int。
 
 ---
 
@@ -746,11 +746,11 @@ DataFrame df2
 
 Write a solution to concatenate these two DataFrames vertically into one DataFrame.
 
-寫一個解決方案，將這兩個 DataFrame 垂直堆疊成一個 DataFrame。
+寫一個解決方案，將這兩個 DataFrame 垂直堆疊成一個 DataFrame
 
 The result format is in the following example.
 
-結果格式如下。
+結果格式如下
 
 ---
 
@@ -794,7 +794,7 @@ Output:
 
 The two DataFramess are stacked vertically, and their rows are combined.
 
-將兩個 DataFrame 垂直堆疊，並合併 rows。
+將兩個 DataFrame 垂直堆疊，並合併行 (rows)
 
 ---
 
@@ -951,6 +951,7 @@ Output:
 | 4       | david@domain.com  |
 +---------+-------------------+
 ```
+
 ### Explanation 解釋:
 
 `alice@example.com` is valid because it contains one `@`, `alice` is alphanumeric, and `example.com` starts with a letter and ends with `.com`.
