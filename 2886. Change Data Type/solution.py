@@ -16,15 +16,13 @@
 
 # The grade column is stored as floats, convert it to integers.
 
-# 成績 column 為浮點數，將其轉為整數
+# 成績列 (column) 為浮點數，將其轉為整數
 
 # The result format is in the following example.
 
 # 結果格式如下
 
-### 範例
-
-### Example 1:
+### Example 範例:
 
 # Input:
 # DataFrame students:
@@ -47,7 +45,7 @@
 
 # The data types of the column grade is converted to int.
 
-# 將 grade column 的資料型別轉換為 int
+# 將 grade 列 (column) 的資料型別轉換為 int
 
 ### Code
 
