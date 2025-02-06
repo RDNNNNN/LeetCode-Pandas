@@ -13,7 +13,7 @@
 
 # Each row contains a user's unique ID and email address.
 
-# 每一行包含使用者的唯一 ID 和電子郵件地址
+# 每一行 (row) 包含使用者的唯一 ID 和電子郵件地址
 
 # Write a solution to find all the valid email addresses. 
 
