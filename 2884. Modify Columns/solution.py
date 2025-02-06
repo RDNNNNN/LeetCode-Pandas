@@ -20,12 +20,9 @@
 
 # 結果格式如下
 
-### 範例
-
-### Example 1:
+### Example 範例:
 
 # Input:
-
 # DataFrame employees
 # +---------+--------+
 # | name    | salary |
@@ -49,7 +46,7 @@
 ### Explanation 解釋:
 
 # Every salary has been doubled.
-# 每個薪資都被加倍了。
+# 每個薪資都被加倍了
 
 ### Code
 
