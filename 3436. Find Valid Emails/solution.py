@@ -69,27 +69,27 @@
 
 # alice@example.com is valid because it contains one @, alice is alphanumeric, and example.com starts with a letter and ends with .com.
 
-# alice@example.com 有效，因為它包含一個 @，alice 是字母數字，example.com 以字母開頭並以 .com 結尾。
+# alice@example.com 有效，因為它包含一個 @，alice 是字母數字，example.com 以字母開頭並以 .com 結尾
 
 # bob_at_example.com is invalid because it contains an underscore instead of an @.
 
-# bob_at_example.com 無效，因為它包含下劃線而不是 @。
+# bob_at_example.com 無效，因為它包含下劃線而不是 @
 
 # charlie@example.net is invalid because the domain does not end with .com.
 
-# charlie@example.net 無效，因為網域不以 .com 結尾。
+# charlie@example.net 無效，因為網域不以 .com 結尾
 
 # david@domain.com is valid because it meets all criteria.
 
-# david@domain.com 有效，因為它滿足所有條件。
+# david@domain.com 有效，因為它滿足所有條件
 
 # eve@invalid is invalid because the domain does not end with .com.
 
-# eve@invalid 無效，因為網域不以 .com 結尾。
+# eve@invalid 無效，因為網域不以 .com 結尾
 
 # Result table is ordered by user_id in ascending order.
 
-# 結果表格依照 user_id 升序排列。
+# 結果表格依照 user_id 升序排列
 
 ### Code
 
