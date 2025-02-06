@@ -10,7 +10,7 @@
 
 # (subject_id, dept_id) is the primary key (combinations of columns with unique values) of this table.
 
-# subject_id 跟 dept_id 為表格的 primary key (具有唯一值的 columns 組合)
+# subject_id 跟 dept_id 為表格的 primary key (具有唯一值的列組合)
 
 # Each row in this table indicates that the teacher with teacher_id teaches the subject subject_id in the department dept_id.
 
@@ -28,9 +28,7 @@
 
 # 結果格式如下
 
-### 範例
-
-### Example 1:
+### Example 範例:
 
 # Input:
 # Teacher table:
