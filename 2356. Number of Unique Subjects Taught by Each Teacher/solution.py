@@ -14,7 +14,7 @@
 
 # Each row in this table indicates that the teacher with teacher_id teaches the subject subject_id in the department dept_id.
 
-# 該表中的每一個 row 具有 teacher_id 的教師以及科目 subject_id 還有系所 dept_id
+# 該表中的每一行 (row) 具有 teacher_id 的教師以及科目 subject_id 還有系所 dept_id
 
 # Write a solution to calculate the number of unique subjects each teacher teaches in the university.
 
