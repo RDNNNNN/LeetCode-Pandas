@@ -26,12 +26,9 @@
 
 # 結果格式如下
 
-### 範例
-
-### Example 1:
+### Example 範例:
 
 # Input:
-
 # df1
 # +------------+---------+-----+
 # | student_id | name    | age |
@@ -66,7 +63,7 @@
 
 # The two DataFramess are stacked vertically, and their rows are combined.
 
-# 將兩個 DataFrame 垂直堆疊，並合併 rows
+# 將兩個 DataFrame 垂直堆疊，並合併行 (rows) 
 
 ### Code
 
