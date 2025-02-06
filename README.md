@@ -407,7 +407,7 @@ Output:
 
 A new column bonus is created by doubling the value in the column salary.
 
-建立名為 `bonus` 的新列並且值為 `salay` 的兩倍
+建立名為 `bonus` 的新列 (column) 並且值為 `salay` 的兩倍
 
 ---
 
