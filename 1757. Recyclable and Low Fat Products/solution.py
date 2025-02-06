@@ -32,9 +32,7 @@
 
 # 結果格式如下
 
-### 範例
-
-### Example 1:
+### Example 範例:
 
 # Input:
 # Products table:
