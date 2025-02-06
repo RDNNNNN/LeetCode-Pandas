@@ -116,36 +116,50 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 # drop=True 確保舊的索引不會變成新欄位
 
 
-# import pandas as pd
-# import re
+import pandas as pd
+import re
 
-# def find_valid_emails_fullmatch(users: pd.DataFrame) -> pd.DataFrame:
-#     pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
-#     valid_emails = users[users['email'].str.fullmatch(pattern, na=False)]
-#     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
+def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
+    """ 方法 1: 使用 str.fullmatch() (更嚴格的匹配) """
+    pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
+    valid_emails = users[users['email'].str.fullmatch(pattern, na=False)]
+    return valid_emails.sort_values(by='user_id').reset_index(drop=True)
 
-# fullmatch() 會確保整個字串需要完全符合
+# fullmatch 會確保整個字串需要完全符合，不能有多餘的字元
 # 效率高但只適用於 Pandas
 
 # import pandas as pd
 # import re
 
-# def find_valid_emails_apply(users: pd.DataFrame) -> pd.DataFrame:
-    
+# def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 #     pattern = re.compile(r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$')
 #     def is_valid_email(email):
 #         return bool(pattern.fullmatch(email))
     
-# apply()    
-# re.compile() 用來預編譯正則表達式，使其可造成重複效能損耗
+#     valid_emails = users[users['email'].apply(is_valid_email)]
+#     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
+    
+# apply() 寫法
+# re.compile() 用來預編譯正則表達式，只需要解析一次，適用於大量重複使用時可提升效率
+# 如果沒使用 re.compile 則在每次使用時都需要重新解析，效率會變差
+# 如果 email 符合格式會回傳 True 或是 False
+# apply() 會逐行處理 email 欄位，對 email 的每一行執行 is_vaild_email() 並回傳 True 或是 False
+# user[...] 只保留 True 的行數
+
     
 # import pandas as pd
 # import re
 
-# def find_valid_emails_query(users: pd.DataFrame) -> pd.DataFrame:
+# def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 #     pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
 #     valid_emails = users.query("email.str.contains(@pattern, regex=True, na=False)", engine='python')
 #     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
 
-# query()
-
+# query() 寫法
+# 使用 query() 搭配 str.contains()
+# users.query() 類似 SQL 的查詢方式
+# str.contains() 會檢查 email 格式是否匹配
+# @pattern 表示前面定義的 pattern 變數
+# regex=True 告訴 Pandas 是一個正則表達式
+# na=False 確保 NaN 不會影響查詢 (如果有 NaN 則返回 False)
+# engine='python' query() 預設使用 numexper 引擎，不支援 str.contains()，所以需要設置 engine='python' 來啟用完整的 Pandas 查詢功能
