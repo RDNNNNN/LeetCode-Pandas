@@ -24,7 +24,7 @@
 
 Write a solution to find the ids of products that are both low fat and recyclable.
 
-寫出一個解決方案來尋找低脂且可回收的產品 `ID`
+寫出一個解決方案來尋找低脂且可回收的產品 ID
 
 Return the result table in any order.
 
@@ -62,7 +62,7 @@ Output:
 
 ### Explanation 解釋:
 
-Only products 1 and 3 are both low fat and recyclable.
+Only products `1` and `3` are both low fat and recyclable.
 
 只有產品 `1` 跟 `3` 是低脂且可以被回收的
 
@@ -239,7 +239,7 @@ DataFrame: employees
 
 Write a solution to display the first 3 rows of this DataFrame.
 
-撰寫一個解決方案來顯示此資料表的前三行(rows)資料
+撰寫一個解決方案來顯示此資料表的前三行 (rows) 資料
 
 ---
 
@@ -663,7 +663,7 @@ Output:
 
 The data types of the column grade is converted to int.
 
-將 grade 列 (columns) 的資料型別轉換為 int。
+將 grade 列 (column) 的資料型別轉換為 int。
 
 ---
 
@@ -895,7 +895,7 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 
 Each row contains a user's unique ID and email address.
 
-每一行包含使用者的唯一 ID 和電子郵件地址。
+每一行 (row) 包含使用者的唯一 ID 和電子郵件地址。
 
 Write a solution to find all the valid email addresses. 
 
