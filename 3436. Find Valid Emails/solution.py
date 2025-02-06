@@ -1,13 +1,11 @@
 ## 3436. Find Valid Emails 尋找有效電子郵件
 
-
 # +-----------------+---------+
 # | Column Name     | Type    |
 # +-----------------+---------+
 # | user_id         | int     |
 # | email           | varchar |
 # +-----------------+---------+
-
 
 # (user_id) is the unique key for this table.
 
@@ -116,14 +114,14 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 # drop=True 確保舊的索引不會變成新欄位
 
 
-import pandas as pd
-import re
+# import pandas as pd
+# import re
 
-def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
-    """ 方法 1: 使用 str.fullmatch() (更嚴格的匹配) """
-    pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
-    valid_emails = users[users['email'].str.fullmatch(pattern, na=False)]
-    return valid_emails.sort_values(by='user_id').reset_index(drop=True)
+# def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
+#     """ 方法 1: 使用 str.fullmatch() (更嚴格的匹配) """
+#     pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
+#     valid_emails = users[users['email'].str.fullmatch(pattern, na=False)]
+#     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
 
 # fullmatch 會確保整個字串需要完全符合，不能有多餘的字元
 # 效率高但只適用於 Pandas
