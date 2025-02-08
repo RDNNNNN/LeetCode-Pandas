@@ -1007,7 +1007,7 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 import pandas as pd
 import re
 
-def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:"
+def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
     pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
     valid_emails = users[users['email'].str.fullmatch(pattern, na=False)]
     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
