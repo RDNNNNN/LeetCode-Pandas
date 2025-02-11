@@ -722,6 +722,66 @@ def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
 # 如果有 NaN 可以使用 fillna() 填補缺失值
 ```
 
+## 2877. Create a DataFrame from List 從 List 建立一個 DataFrame
+
+Write a solution to create a DataFrame from a 2D list called student_data. 
+
+鑽寫一個解決方案，從名為 `student_data` 的 2D list 建立一個 DataFrame
+
+This 2D list contains the IDs and ages of some students.
+
+這個 2D list 包含一些學生的 ID 和年齡
+
+The DataFrame should have two columns, `student_id` and `age`, and be in the same order as the original 2D list.
+
+DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D list 相同
+
+The result format is in the following example.
+
+結果如下所示
+
+---
+
+### Example 範例:
+
+```py
+Input:
+student_data:
+[
+  [1, 15],
+  [2, 11],
+  [3, 11],
+  [4, 20]
+]
+
+Output:
++------------+-----+
+| student_id | age |
++------------+-----+
+| 1          | 15  |
+| 2          | 11  |
+| 3          | 11  |
+| 4          | 20  |
++------------+-----+
+```
+
+### Explanation 解釋:
+
+A DataFrame was created on top of `student_data`, with two columns named `student_id` and `age`.
+
+在 `student_data` 之上建立一個 DataFrame，包含一個名為`student_id` 和 `age` 的兩個欄位
+
+---
+
+### Code
+
+```py
+import pandas as pd
+
+def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
+    return pd.DataFrame(student_data,columns= ["student_id","age"])
+```
+
 ## 2888. Reshape Data: Concatenate 重塑資料: 連接
 
 ```py
