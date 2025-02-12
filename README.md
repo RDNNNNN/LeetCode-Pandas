@@ -780,6 +780,57 @@ import pandas as pd
 
 def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
     return pd.DataFrame(student_data,columns= ["student_id","age"])
+
+# 使用 pd.DataFrame() 轉成 DataFrame 並建立 student_id 跟 age 的欄位
+
+
+import pandas as pd
+
+def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
+    data_dict = {
+        "student_id": [row[0] for row in student_data],
+        "age": [row[1] for row in student_data]
+    }
+    return pd.DataFrame(data_dict)
+
+# 轉成 dict 再轉成 DataFrame
+# 因為 student_data 是一個以 rows 為主的結構
+# 但 dict 需要以 columns 為主的結構，所以需要將 rows 轉成 columns
+# "student_id": [row[0] for row in student_data],  # 取出第一欄的所有值
+#  "age": [row[1] for row in student_data]  # 取出第二欄的所有值
+
+
+import pandas as pd
+
+def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
+    student_ids, ages = zip(*student_data)
+    return pd.DataFrame({"student_id": student_ids, "age": ages})
+
+# zip() 寫法
+# * 為解包運算符，將 student_data 這個 list of lists 拆開，讓 zip() 可以分別處理每一列的數據
+# 當 *student_data 解包後，等於 zip([1, 15], [2, 11], [3, 11], [4, 20])
+# zip(*) 更簡潔且效率高，因為 zip() 是 C 語言的內建函數，所以會比 for 迴圈還快
+
+
+import pandas as pd 
+
+def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
+    student_ids = list(map(lambda x: x[0], student_data))
+    ages = list(map(lambda x: x[1], student_data))
+    return pd.DataFrame({"student_id": student_ids, "age": ages})
+
+# map() 寫法
+# map() 搭配 lambda 表達式
+# 因為 map() 回傳的結果會是一個 map object，它是一個 iterator (迭代器)，只有被迭代時才會產生結果，沒辦法直接被 pandas.DataFrame() 使用，所以需要轉成 list
+
+
+import pandas as pd
+
+def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
+    return pd.DataFrame.from_records(student_data, columns=["student_id", "age"])
+
+# from_records() 寫法
+# from_records() 為 pandas 官方推薦寫法之一，適用於 list of tuples 或 dict，list of lists 可以直接用 pd.DataFrame()
 ```
 
 ## 2888. Reshape Data: Concatenate 重塑資料: 連接
