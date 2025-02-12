@@ -124,7 +124,7 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 #     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
 
 # fullmatch 會確保整個字串需要完全符合，不能有多餘的字元
-# 效率高但只適用於 Pandas
+# 效率高但只適用於 pandas
 
 # import pandas as pd
 # import re
@@ -158,6 +158,6 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 # users.query() 類似 SQL 的查詢方式
 # str.contains() 會檢查 email 格式是否匹配
 # @pattern 表示前面定義的 pattern 變數
-# regex=True 告訴 Pandas 是一個正則表達式
+# regex=True 告訴 pandas 是一個正則表達式
 # na=False 確保 NaN 不會影響查詢 (如果有 NaN 則返回 False)
-# engine='python' query() 預設使用 numexper 引擎，不支援 str.contains()，所以需要設置 engine='python' 來啟用完整的 Pandas 查詢功能
+# engine='python' query() 預設使用 numexper 引擎，不支援 str.contains()，所以需要設置 engine='python' 來啟用完整的 pandas 查詢功能
