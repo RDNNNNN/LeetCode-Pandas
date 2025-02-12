@@ -61,7 +61,7 @@ def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees["bonus"] = employees["salary"] * 2
     return employees
 
-# 直觀且高效的操作，因為 Pandas 會對欄位進行向量化操作 (vectorized operations)
+# 直觀且高效的操作，因為 pandas 會對欄位進行向量化操作 (vectorized operations)
 # 運算會比 apply() 或是迴圈更快
 
 
@@ -117,6 +117,6 @@ def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
 #     employees["bonus"] = np.multiply(employees["salary"], 2)
 #     return employees
 
-# 數值計算的效率更好，Numpy 的向量化計算比 Pandas 更快
+# 數值計算的效率更好，Numpy 的向量化計算比 pandas 更快
 # 適用於超大型 DataFrame
-# 不夠直觀，因為 Pandas 本身已經內建向量化計算 (salary * 2)
+# 不夠直觀，因為 pandas 本身已經內建向量化計算 (salary * 2)
