@@ -420,7 +420,7 @@ def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees["bonus"] = employees["salary"] * 2
     return employees
 
-# 直觀且高效的操作，因為 Pandas 會對欄位進行向量化操作 (vectorized operations)
+# 直觀且高效的操作，因為 pandas 會對欄位進行向量化操作 (vectorized operations)
 # 運算會比 apply() 或是迴圈更快
 
 
@@ -476,9 +476,9 @@ def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees["bonus"] = np.multiply(employees["salary"], 2)
     return employees
 
-# 數值計算的效率更好，Numpy 的向量化計算比 Pandas 更快
+# 數值計算的效率更好，Numpy 的向量化計算比 pandas 更快
 # 適用於超大型 DataFrame
-# 不夠直觀，因為 Pandas 本身已經內建向量化計算 (salary * 2)
+# 不夠直觀，因為 pandas 本身已經內建向量化計算 (salary * 2)
 ```
 
 ## 2884. Modify Columns 修改欄位
@@ -830,7 +830,7 @@ def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
     return pd.DataFrame.from_records(student_data, columns=["student_id", "age"])
 
 # from_records() 寫法
-# from_records() 為 Pandas 官方推薦寫法之一，適用於 list of tuples 或 dict，list of lists 可以直接用 pd.DataFrame()
+# from_records() 為 pandas 官方推薦寫法之一，適用於 list of tuples 或 dict，list of lists 可以直接用 pd.DataFrame()
 ```
 
 ## 2888. Reshape Data: Concatenate 重塑資料: 連接
@@ -1124,7 +1124,7 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
 
 # fullmatch() 會確保整個字串需要完全符合，不能有多餘的字元
-# 效率高但只適用於 Pandas
+# 效率高但只適用於 pandas
 
 
 import pandas as pd
@@ -1158,7 +1158,7 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 # users.query() 類似 SQL 的查詢方式
 # str.contains() 會檢查 email 格式是否匹配
 # @pattern 表示前面定義的 pattern 變數
-# regex=True 告訴 Pandas 是一個正則表達式
+# regex=True 告訴 pandas 是一個正則表達式
 # na=False 確保 NaN 不會影響查詢 (如果有 NaN 則返回 False)
-# engine='python' query() 預設使用 numexper 引擎，不支援 str.contains()，所以需要設置 engine='python' 來啟用完整的 Pandas 查詢功能
+# engine='python' query() 預設使用 numexper 引擎，不支援 str.contains()，所以需要設置 engine='python' 來啟用完整的 pandas 查詢功能
 ```
