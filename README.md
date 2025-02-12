@@ -32,7 +32,7 @@ Return the result table in any order.
 
 The result format is in the following example.
 
-結果格式如下
+結果顯示如下
 
 ---
 
@@ -141,7 +141,7 @@ Return the result table in any order
 
 The result format is shown in the following example.
 
-結果格式如下
+結果顯示如下
 
 ### Example 範例:
 
@@ -503,7 +503,7 @@ Write a solution to modify the salary column by multpylying each salary by 2.
 
 The result format is in the following example.
 
-結果格式如下
+結果顯示如下
 
 ---
 
@@ -636,7 +636,7 @@ The grade column is stored as floats, convert it to integers.
 
 The result format is in the following example.
 
-結果格式如下
+結果顯示如下
 
 ### Example 範例:
 
@@ -724,7 +724,7 @@ def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
 
 ## 2877. Create a DataFrame from List 從 List 建立一個 DataFrame
 
-Write a solution to create a DataFrame from a 2D list called student_data. 
+Write a solution to create a DataFrame from a 2D list called `student_data`. 
 
 鑽寫一個解決方案，從名為 `student_data` 的 2D list 建立一個 DataFrame
 
@@ -738,7 +738,7 @@ DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D 
 
 The result format is in the following example.
 
-結果如下所示
+結果顯示如下
 
 ---
 
@@ -794,8 +794,8 @@ def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
     return pd.DataFrame(data_dict)
 
 # 轉成 dict 再轉成 DataFrame
-# 因為 student_data 是一個以 rows 為主的結構
-# 但 dict 需要以 columns 為主的結構，所以需要將 rows 轉成 columns
+# 因為 student_data 是一個以行 (rows) 為主的結構
+# 但 dict 需要以 columns 為主的結構，所以需要將行 (rows) 轉成列 (columns)
 # "student_id": [row[0] for row in student_data],  # 取出第一欄的所有值
 #  "age": [row[1] for row in student_data]  # 取出第二欄的所有值
 
@@ -830,7 +830,7 @@ def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
     return pd.DataFrame.from_records(student_data, columns=["student_id", "age"])
 
 # from_records() 寫法
-# from_records() 為 pandas 官方推薦寫法之一，適用於 list of tuples 或 dict，list of lists 可以直接用 pd.DataFrame()
+# from_records() 為 Pandas 官方推薦寫法之一，適用於 list of tuples 或 dict，list of lists 可以直接用 pd.DataFrame()
 ```
 
 ## 2888. Reshape Data: Concatenate 重塑資料: 連接
@@ -861,7 +861,7 @@ Write a solution to concatenate these two DataFrames vertically into one DataFra
 
 The result format is in the following example.
 
-結果格式如下
+結果顯示如下
 
 ---
 
