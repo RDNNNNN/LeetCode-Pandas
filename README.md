@@ -722,11 +722,11 @@ def changeDatatype(students: pd.DataFrame) -> pd.DataFrame:
 # 如果有 NaN 可以使用 fillna() 填補缺失值
 ```
 
-## 2877. Create a DataFrame from List 從 List 建立一個 DataFrame
+## 2877. Create a DataFrame from List 從列表建立一個 DataFrame
 
 Write a solution to create a DataFrame from a 2D list called `student_data`. 
 
-鑽寫一個解決方案，從名為 `student_data` 的 2D list 建立一個 DataFrame
+鑽寫一個解決方案，從名為 `student_data` 的 2D 列表建立一個 DataFrame
 
 This 2D list contains the IDs and ages of some students.
 
@@ -734,7 +734,7 @@ This 2D list contains the IDs and ages of some students.
 
 The DataFrame should have two columns, `student_id` and `age`, and be in the same order as the original 2D list.
 
-DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D list 相同
+DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D 列表相同
 
 The result format is in the following example.
 
