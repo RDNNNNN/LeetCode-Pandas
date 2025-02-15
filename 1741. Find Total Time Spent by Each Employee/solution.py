@@ -27,7 +27,7 @@
 
 # It is guaranteed that no two events on the same day intersect in time, and in_time < out_time.
 
-# 確保同一天沒有兩個事件的重複，而且 in_time 小於 out_time
+# 確保同一天沒有兩個事件的重複，而且 in_time < out_time
 
 # Write a solution to calculate the total time in minutes spent by each employee on each day at the office.
 
