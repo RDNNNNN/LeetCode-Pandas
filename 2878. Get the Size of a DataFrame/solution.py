@@ -17,7 +17,7 @@
 
 # Return the result as an array:
 
-# 以 array 的形式回傳結果
+# 以列表的形式回傳結果
 
 # [number of rows, number of columns]
 
