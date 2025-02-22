@@ -303,6 +303,8 @@ The result format is shown in the following example.
 
 結果顯示如下
 
+---
+
 ### Example 範例:
 
 ```py
@@ -523,6 +525,10 @@ The result format is in the following example.
 
 結果顯示如下
 
+---
+
+### Example 範例:
+
 ```py
 Input:
 +-----------+----------+-----+-------------+--------------------+
@@ -546,7 +552,7 @@ Output:
 
 ---
 
-Explanation 解釋:
+### Explanation 解釋:
 
 This DataFrame contains 10 rows and 5 columns.
 
@@ -777,6 +783,7 @@ Output:
 ```
 
 ### Explanation 解釋:
+
 Student Ulysses has `student_id = 101`, we select the `name` and `age`.
 
 學生 Ulysses 的 `student_id = 101`，我們篩選此 `name` 跟 `age`
@@ -846,6 +853,8 @@ Write a solution to create a new column name `bonus` that contains the doubled v
 The result format is in the following example.
 
 結果顯示如下
+
+---
 
 ### Example 範例:
 
@@ -1110,6 +1119,8 @@ The grade column is stored as floats, convert it to integers.
 The result format is in the following example.
 
 結果顯示如下
+
+---
 
 ### Example 範例:
 
