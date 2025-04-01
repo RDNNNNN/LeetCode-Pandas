@@ -19,12 +19,10 @@
 # +-------------+--------+
 
 # Write a solution to concatenate these two DataFrames vertically into one DataFrame.
-
-# 寫一個解決方案，將這兩個 DataFrame 垂直堆疊成一個 DataFrame
-
 # The result format is in the following example.
 
-# 結果格式如下
+# 撰寫一個解決方案，將這兩個 DataFrame 垂直堆疊成一個 DataFrame
+# 結果顯示如下
 
 ### Example 範例:
 
