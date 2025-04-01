@@ -9,15 +9,11 @@
 # +-------------+--------+
 
 # A company plans to provide its employees with a bonus.
-
-# 一間公司計畫給員工提供獎金
-
 # Write a solution to create a new column name bonus that contains the doubled values of the salary column.
-
-# 撰寫一個解決方案名為 bonus 的新列 (column)，值為 salary 的兩倍
-
 # The result format is in the following example.
 
+# 一間公司計畫給員工提供獎金
+# 撰寫一個解決方案名為 bonus 的新列 (column)，值為 salary 的兩倍
 # 結果顯示如下
 
 ### Example 範例:
