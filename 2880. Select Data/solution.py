@@ -10,11 +10,9 @@
 # +-------------+--------+
 
 # Write a solution to select the name and age of the student with student_id = 101.
-
-# 撰寫一個解決方案，選取 student_id = 101 的名字跟年齡
-
 # The result format is in the following example.
 
+# 撰寫一個解決方案，選取 student_id = 101 的名字跟年齡
 # 結果顯示如下
 
 ### Example 範例:
