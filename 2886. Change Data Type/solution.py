@@ -11,16 +11,12 @@
 # +-------------+--------+
 
 # Write a solution to correct the errors:
-
-# 撰寫一個解決方案來修正錯誤
-
 # The grade column is stored as floats, convert it to integers.
-
-# 成績列 (column) 為浮點數，將其轉為整數
-
 # The result format is in the following example.
 
-# 結果格式如下
+# 撰寫一個解決方案來修正錯誤
+# 成績列 (column) 為浮點數，將其轉為整數
+# 結果顯示如下
 
 ### Example 範例:
 
