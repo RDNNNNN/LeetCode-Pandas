@@ -12,17 +12,13 @@
 # +-------------+--------+
 
 # Write a solution to calculate and display the number of rows and columns of players.
-
-# 撰寫一個解決方案來計算並顯示 players 的行數 (rows) 跟列數 (columns)
-
 # Return the result as an array:
-
-# 以列表的形式回傳結果
-
 # [number of rows, number of columns]
-
 # The result format is in the following example.
 
+# 撰寫一個解決方案來計算並顯示 players 的行數 (rows) 跟列數 (columns)
+# 以列表的形式回傳結果
+# [number of rows, number of columns]
 # 結果顯示如下
 
 # Input:
