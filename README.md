@@ -11,6 +11,8 @@
 +-------------+------+
 ```
 
+### 題目
+
 (emp_id, event_day, in_time) is the primary key (combinations of columns with unique values) of this table.
 
 The table shows the employees' entries and exits in an office.
@@ -32,6 +34,8 @@ Return the result table in any order
 The result format is in the following example.
 
 `emp_id` 跟 `event_day` 還有 `in_time` 為該表格的 primary key (具有唯一值的列組合)
+
+### 中文
 
 該表格顯示了員工進入辦公室以及離開辦公室的狀況
 
@@ -178,6 +182,8 @@ def total_time(employees: pd.DataFrame) -> pd.DataFrame:
 +-------------+---------+
 ```
 
+### 題目
+
 `product_id` is the primary key (column with unique values) for this table.
 
 `low_fats` is an `ENUM` (category) of type ('Y', 'N') where `Y` means this product is low fat and `N` means it is not.
@@ -189,6 +195,8 @@ Write a solution to find the ids of products that are both low fat and recyclabl
 Return the result table in any order.
 
 The result format is in the following example.
+
+### 中文
 
 `product_id` 為表格的 primary key （具有唯一值的欄位）
 
@@ -291,6 +299,8 @@ def find_products(products: pd.DataFrame) -> pd.DataFrame:
 +-------------+------+
 ```
 
+### 題目
+
 (subject_id, dept_id) is the primary key (combinations of columns with unique values) of this table.
 
 Each row in this table indicates that the teacher with `teacher_id` teaches the subject `subject_id` in the department `dept_id`.
@@ -300,6 +310,8 @@ Write a solution to calculate the number of unique subjects each teacher teaches
 Return the result table in any order.
 
 The result format is shown in the following example.
+
+### 中文
 
 `subject_id` 跟 `dept_id` 為表格的 primary key (具有唯一值的列組合)
 
@@ -397,6 +409,8 @@ def count_unique_subjects(teacher: pd.DataFrame) -> pd.DataFrame:
 
 ## 2877. Create a DataFrame from List 從列表建立一個 DataFrame
 
+### 題目
+
 Write a solution to create a DataFrame from a 2D list called `student_data`.
 
 This 2D list contains the IDs and ages of some students.
@@ -404,6 +418,8 @@ This 2D list contains the IDs and ages of some students.
 The DataFrame should have two columns, `student_id` and `age`, and be in the same order as the original 2D list.
 
 The result format is in the following example.
+
+### 中文
 
 撰寫一個解決方案，從名為 `student_data` 的 2D 列表建立一個 DataFrame
 
@@ -521,6 +537,8 @@ DataFrame players:
 +-------------+--------+
 ```
 
+### 題目
+
 Write a solution to calculate and display the number of rows and columns of `players`.
 
 Return the result as an array:
@@ -528,6 +546,8 @@ Return the result as an array:
 `[number of rows, number of columns]`
 
 The result format is in the following example.
+
+### 中文
 
 撰寫一個解決方案來計算並顯示 players 的行數 (rows) 跟列數 (columns)
 
@@ -636,6 +656,8 @@ DataFrame: employees
 | salary      | int    |
 +-------------+--------+
 ```
+
+### 題目
 
 Write a solution to display the first 3 rows of this DataFrame.
 
@@ -762,6 +784,8 @@ DataFrame students
 | age         | int    |
 +-------------+--------+
 ```
+
+### 題目
 
 Write a solution to select the name and age of the student with student_id = 101.
 
@@ -987,6 +1011,8 @@ DataFrame employees
 +-------------+--------+
 ```
 
+### 題目
+
 A company intends to give its employees a pay rise.
 
 Write a solution to modify the salary column by multpylying each salary by 2.
@@ -1120,6 +1146,8 @@ DataFrame students
 +-------------+--------+
 ```
 
+### 題目
+
 Write a solution to correct the errors:
 
 The grade column is stored as floats, convert it to integers.
@@ -1239,6 +1267,8 @@ DataFrame df2
 | age         | int    |
 +-------------+--------+
 ```
+
+### 題目
 
 Write a solution to concatenate these two DataFrames vertically into one DataFrame.
 
@@ -1385,6 +1415,8 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 +-----------------+---------+
 ```
 
+### 題目
+
 `user_id` is the unique key for this table.
 
 Each row contains a user's unique ID and email address.
@@ -1402,6 +1434,8 @@ The part before the `@` symbol contains only alphanumeric characters and undersc
 The part after the `@` symbol and before .com contains a domain name that contains only letters.
 
 Return the result table ordered by `user_id` in ascending order.
+
+### 中文
 
 `user_id` 為該表格的唯一值。
 
