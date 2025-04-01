@@ -13,41 +13,41 @@
 
 (emp_id, event_day, in_time) is the primary key (combinations of columns with unique values) of this table.
 
-`emp_id` 跟 `event_day` 還有 `in_time` 為該表格的 primary key (具有唯一值的列組合)
-
 The table shows the employees' entries and exits in an office.
-
-該表格顯示了員工進入辦公室以及離開辦公室的狀況
 
 event_day is the day at which this event happened, in_time is the minute at which the employee entered the office, and out_time is the minute at which they left the office.
 
-`event_day` 是發生的日期，`in_time` 為進入辦公室的時間，`out_time` 則是離開辦公室的時間
-
 in_time and out_time are between `1` and `1440`.
-
-`in_time` 跟 `out_time` 介於 `1` 到 `1440` 之間
 
 It is guaranteed that no two events on the same day intersect in time, `and in_time < out_time`.
 
-確保同一天沒有兩個事件的重複，而且 `in_time < out_time`
-
 Write a solution to calculate the total time in minutes spent by each employee on each day at the office.
-
-撰寫一個解決方案來計算員工每天在辦公室的時間(以分鐘為單位)，
 
 Note that within one day, an employee can enter and leave more than once.
 
-請注意，在一天之內一名員工可以多次進入和離開
-
 The time spent in the office for a single entry is `out_time - in_time`.
-
-`time spent` 為辦公室花費的時間，計算方式為 `out_time - in_time`
 
 Return the result table in any order
 
-回傳任意順序的結果
-
 The result format is in the following example.
+
+`emp_id` 跟 `event_day` 還有 `in_time` 為該表格的 primary key (具有唯一值的列組合)
+
+該表格顯示了員工進入辦公室以及離開辦公室的狀況
+
+`event_day` 是發生的日期，`in_time` 為進入辦公室的時間，`out_time` 則是離開辦公室的時間
+
+`in_time` 跟 `out_time` 介於 `1` 到 `1440` 之間
+
+確保同一天沒有兩個事件的重複，而且 `in_time < out_time`
+
+撰寫一個解決方案來計算員工每天在辦公室的時間(以分鐘為單位)，
+
+請注意，在一天之內一名員工可以多次進入和離開
+
+`time spent` 為辦公室花費的時間，計算方式為 `out_time - in_time`
+
+回傳任意順序的結果
 
 結果顯示如下
 
@@ -81,16 +81,24 @@ Output:
 
 ### Explanation 解釋:
 
-Employee 1 has three events: two on day 2020-11-28 with a total of `(32 - 4) + (200 - 55) = 173`, and one on day 2020-12-03 with a total of `(42 - 1) = 41`.
+Employee 1 has three events: 
+
+two on day 2020-11-28 with a total of `(32 - 4) + (200 - 55) = 173`, and one on day 2020-12-03 with a total of `(42 - 1) = 41`.
 
 員工 1 有 3 個事件：
+
 2020 年 11 月 28 日有 2 個事件，總計 `(32 - 4) + (200 - 55) = 173`
+
 2020 年 12 月 3 日有 1 個事件，總計 `(42 - 1) = 41`
 
-Employee 2 has two events: one on day 2020-11-28 with a total of `(33 - 3) = 30`, and one on day 2020-12-09 with a total of `(74 - 47) = 27`.
+Employee 2 has two events: 
+
+one on day 2020-11-28 with a total of `(33 - 3) = 30`, and one on day 2020-12-09 with a total of `(74 - 47) = 27`.
 
 員工 2 有 2 個事件：
+
 一個發生在 2020 年 11 月 28 日，總計 `(33 - 3) = 30`
+
 一個發生在 2020 年 12 月 09 日，總計 `(74 - 47) = 27`
 
 ---
@@ -172,25 +180,25 @@ def total_time(employees: pd.DataFrame) -> pd.DataFrame:
 
 `product_id` is the primary key (column with unique values) for this table.
 
-`product_id` 為表格的 primary key （具有唯一值的欄位）
-
 `low_fats` is an `ENUM` (category) of type ('Y', 'N') where `Y` means this product is low fat and `N` means it is not.
-
-`low_fats` 是一種 `ENUM` (類別)，其中 `Y` 表示這個產品為低脂，`N` 則不為低脂產品
 
 `recyclable` is an `ENUM` (category) of types ('Y', 'N') where `Y` means this product is recyclable and `N` means it is not.
 
-`recyclable` 是一種 `ENUM` (類別)，其中 `Y` 表示這個產品可回收，`N` 則不能被回收
-
 Write a solution to find the ids of products that are both low fat and recyclable.
-
-寫出一個解決方案來尋找低脂且可回收的產品 ID
 
 Return the result table in any order.
 
-以任意順序回傳結果
-
 The result format is in the following example.
+
+`product_id` 為表格的 primary key （具有唯一值的欄位）
+
+`low_fats` 是一種 `ENUM` (類別)，其中 `Y` 表示這個產品為低脂，`N` 則不為低脂產品
+
+`recyclable` 是一種 `ENUM` (類別)，其中 `Y` 表示這個產品可回收，`N` 則不能被回收
+
+寫出一個解決方案來尋找低脂且可回收的產品 ID
+
+以任意順序回傳結果
 
 結果顯示如下
 
@@ -285,21 +293,21 @@ def find_products(products: pd.DataFrame) -> pd.DataFrame:
 
 (subject_id, dept_id) is the primary key (combinations of columns with unique values) of this table.
 
-`subject_id` 跟 `dept_id` 為表格的 primary key (具有唯一值的列組合)
-
 Each row in this table indicates that the teacher with `teacher_id` teaches the subject `subject_id` in the department `dept_id`.
-
-該表中的每一個 row 具有 `teacher_id` 的教師以及科目 `subject_id` 還有系所 `dept_id`
 
 Write a solution to calculate the number of unique subjects each teacher teaches in the university.
 
-撰寫一個解決方案來計算每個老師在大學教授的唯一科目數量
-
-Return the result table in any order
-
-回傳任意順序的結果
+Return the result table in any order.
 
 The result format is shown in the following example.
+
+`subject_id` 跟 `dept_id` 為表格的 primary key (具有唯一值的列組合)
+
+該表中的每一個 row 具有 `teacher_id` 的教師以及科目 `subject_id` 還有系所 `dept_id`
+
+撰寫一個解決方案來計算每個老師在大學教授的唯一科目數量
+
+回傳任意順序的結果
 
 結果顯示如下
 
@@ -336,19 +344,21 @@ Output:
 Teacher 1:
 
 - They teach subject 2 in departments 3 and 4.
-- 他們在第 3 系所跟第 4 系所教授第 2 科目
 - They teach subject 3 in department 3.
+  
+- 他們在第 3 系所跟第 4 系所教授第 2 科目
 - 他們在第 3 系所教授第 3 科目
 
 Teacher 2:
 
 - They teach subject 1 in department 1.
-- 他們在第 1 系所教授第 1 科目
 - They teach subject 2 in department 1.
-- 他們在第 1 系所教授第 2 科目
 - They teach subject 3 in department 1.
-- 他們在第 1 系所教授第 3 科目
 - They teach subject 4 in department 1.
+  
+- 他們在第 1 系所教授第 1 科目
+- 他們在第 1 系所教授第 2 科目
+- 他們在第 1 系所教授第 3 科目
 - 他們在第 1 系所教授第 4 科目
 
 ---
@@ -389,17 +399,17 @@ def count_unique_subjects(teacher: pd.DataFrame) -> pd.DataFrame:
 
 Write a solution to create a DataFrame from a 2D list called `student_data`.
 
-鑽寫一個解決方案，從名為 `student_data` 的 2D 列表建立一個 DataFrame
-
 This 2D list contains the IDs and ages of some students.
-
-這個 2D 列表包含一些學生的 ID 和年齡
 
 The DataFrame should have two columns, `student_id` and `age`, and be in the same order as the original 2D list.
 
-DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D 列表相同
-
 The result format is in the following example.
+
+撰寫一個解決方案，從名為 `student_data` 的 2D 列表建立一個 DataFrame
+
+這個 2D 列表包含一些學生的 ID 和年齡
+
+DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D 列表相同
 
 結果顯示如下
 
@@ -513,15 +523,17 @@ DataFrame players:
 
 Write a solution to calculate and display the number of rows and columns of `players`.
 
-撰寫一個解決方案來計算並顯示 players 的行數 (rows) 跟列數 (columns)
-
 Return the result as an array:
-
-以列表的形式回傳結果
 
 `[number of rows, number of columns]`
 
 The result format is in the following example.
+
+撰寫一個解決方案來計算並顯示 players 的行數 (rows) 跟列數 (columns)
+
+以列表的形式回傳結果
+
+`[number of rows, number of columns]`
 
 結果顯示如下
 
@@ -753,9 +765,9 @@ DataFrame students
 
 Write a solution to select the name and age of the student with student_id = 101.
 
-撰寫一個解決方案，選取 `student_id = 101` 的名字跟年齡
-
 The result format is in the following example.
+
+撰寫一個解決方案，選取 `student_id = 101` 的名字跟年齡
 
 結果顯示如下
 
@@ -844,13 +856,13 @@ DataFrame employees
 
 A company plans to provide its employees with a bonus.
 
-一間公司計畫給員工提供獎金
-
 Write a solution to create a new column name `bonus` that contains the doubled values of the `salary` column.
 
-撰寫一個解決方案名為 `bonus` 的新列，值為 `salary` 的兩倍
-
 The result format is in the following example.
+
+一間公司計畫給員工提供獎金
+
+撰寫一個解決方案名為 `bonus` 的新列，值為 `salary` 的兩倍
 
 結果顯示如下
 
@@ -977,13 +989,13 @@ DataFrame employees
 
 A company intends to give its employees a pay rise.
 
-一間公司打算給員工加薪
-
 Write a solution to modify the salary column by multpylying each salary by 2.
 
-攥寫一個解決方案來將每個薪資乘以 2
-
 The result format is in the following example.
+
+一間公司打算給員工加薪
+
+攥寫一個解決方案來將每個薪資乘以 2
 
 結果顯示如下
 
@@ -1110,13 +1122,13 @@ DataFrame students
 
 Write a solution to correct the errors:
 
-撰寫一個解決方案來修正錯誤
-
 The grade column is stored as floats, convert it to integers.
 
-成績的列 (column) 為浮點數，將其轉為整數
-
 The result format is in the following example.
+
+撰寫一個解決方案來修正錯誤
+
+成績的列 (column) 為浮點數，將其轉為整數
 
 結果顯示如下
 
@@ -1230,9 +1242,9 @@ DataFrame df2
 
 Write a solution to concatenate these two DataFrames vertically into one DataFrame.
 
-寫一個解決方案，將這兩個 DataFrame 垂直堆疊成一個 DataFrame
-
 The result format is in the following example.
+
+寫一個解決方案，將這兩個 DataFrame 垂直堆疊成一個 DataFrame
 
 結果顯示如下
 
@@ -1375,37 +1387,37 @@ def concatenateTables(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 
 `user_id` is the unique key for this table.
 
-`user_id` 為該表格的唯一值。
-
 Each row contains a user's unique ID and email address.
-
-每一行 (row) 包含使用者的唯一 ID 和電子郵件地址。
 
 Write a solution to find all the valid email addresses.
 
-編寫一個解決方法來群找所有的有效電子郵件地址。
-
 A valid email address meets the following criteria:
-
-有效的電子郵件地址符合以下條件。
 
 It contains exactly one `@` symbol.
 
-包含一個 `@` 符號。
-
 It ends with `.com`.
-
-以 `.com` 結尾。
 
 The part before the `@` symbol contains only alphanumeric characters and underscores.
 
-`@` 符號以前的部分只有包含字母數字和底線。
-
 The part after the `@` symbol and before .com contains a domain name that contains only letters.
 
-`@` 符號之後的和 `.com` 之前的部分只有包含字母的網域。
-
 Return the result table ordered by `user_id` in ascending order.
+
+`user_id` 為該表格的唯一值。
+
+每一行 (row) 包含使用者的唯一 ID 和電子郵件地址。
+
+編寫一個解決方法來群找所有的有效電子郵件地址。
+
+有效的電子郵件地址符合以下條件。
+
+包含一個 `@` 符號。
+
+以 `.com` 結尾。
+
+`@` 符號以前的部分只有包含字母數字和底線。
+
+`@` 符號之後的和 `.com` 之前的部分只有包含字母的網域。
 
 回傳以 `user_id` 升序排列的結果表格。
 
@@ -1440,25 +1452,25 @@ Output:
 
 `alice@example.com` is valid because it contains one `@`, `alice` is alphanumeric, and `example.com` starts with a letter and ends with `.com`.
 
-`alice@example.com` 有效，因為它包含一個 `@`，`alice` 是字母數字，`example.com` 以字母開頭並以 `.com` 結尾。
-
 `bob_at_example.com` is invalid because it contains an underscore instead of an `@`.
-
-`bob_at_example.com` 無效，因為它包含下劃線而不是 `@`。
 
 `charlie@example.net` is invalid because the domain does not end with `.com`.
 
-`charlie@example.net` 無效，因為網域不以 `.com` 結尾。
-
 `david@domain.com` is valid because it meets all criteria.
-
-`david@domain.com` 有效，因為它滿足所有條件。
 
 `eve@invalid` is invalid because the domain does not end with `.com`.
 
-`eve@invalid` 無效，因為網域不以 `.com` 結尾。
-
 Result table is ordered by `user_id` in ascending order.
+
+`alice@example.com` 有效，因為它包含一個 `@`，`alice` 是字母數字，`example.com` 以字母開頭並以 `.com` 結尾。
+
+`bob_at_example.com` 無效，因為它包含下劃線而不是 `@`。
+
+`charlie@example.net` 無效，因為網域不以 `.com` 結尾。
+
+`david@domain.com` 有效，因為它滿足所有條件。
+
+`eve@invalid` 無效，因為網域不以 `.com` 結尾。
 
 結果表格依照 `user_id` 升序排列。
 
