@@ -89,15 +89,17 @@ Employee 1 has three events:
 
 two on day 2020-11-28 with a total of `(32 - 4) + (200 - 55) = 173`, and one on day 2020-12-03 with a total of `(42 - 1) = 41`.
 
+Employee 2 has two events: 
+
+one on day 2020-11-28 with a total of `(33 - 3) = 30`, and one on day 2020-12-09 with a total of `(74 - 47) = 27`.
+
+### 中文
+
 員工 1 有 3 個事件：
 
 2020 年 11 月 28 日有 2 個事件，總計 `(32 - 4) + (200 - 55) = 173`
 
 2020 年 12 月 3 日有 1 個事件，總計 `(42 - 1) = 41`
-
-Employee 2 has two events: 
-
-one on day 2020-11-28 with a total of `(33 - 3) = 30`, and one on day 2020-12-09 with a total of `(74 - 47) = 27`.
 
 員工 2 有 2 個事件：
 
@@ -787,7 +789,7 @@ DataFrame students
 
 ### 題目
 
-Write a solution to select the name and age of the student with student_id = 101.
+Write a solution to select the name and age of the student with `student_id = 101`.
 
 The result format is in the following example.
 
@@ -878,11 +880,15 @@ DataFrame employees
 +-------------+--------+
 ```
 
+### 題目
+
 A company plans to provide its employees with a bonus.
 
 Write a solution to create a new column name `bonus` that contains the doubled values of the `salary` column.
 
 The result format is in the following example.
+
+### 中文
 
 一間公司計畫給員工提供獎金
 
@@ -1495,6 +1501,8 @@ Output:
 `eve@invalid` is invalid because the domain does not end with `.com`.
 
 Result table is ordered by `user_id` in ascending order.
+
+### 中文
 
 `alice@example.com` 有效，因為它包含一個 `@`，`alice` 是字母數字，`example.com` 以字母開頭並以 `.com` 結尾。
 
