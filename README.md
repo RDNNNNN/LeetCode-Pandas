@@ -33,9 +33,9 @@ Return the result table in any order
 
 The result format is in the following example.
 
-`emp_id` 跟 `event_day` 還有 `in_time` 為該表格的 primary key (具有唯一值的列組合)
-
 ### 中文
+
+`emp_id` 跟 `event_day` 還有 `in_time` 為該表格的 primary key (具有唯一值的列組合)
 
 該表格顯示了員工進入辦公室以及離開辦公室的狀況
 
