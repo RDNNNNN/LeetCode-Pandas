@@ -16,6 +16,12 @@
 # It is guaranteed that no two events on the same day intersect in time, and in_time < out_time.
 # Write a solution to calculate the total time in minutes spent by each employee on each day at the office.
 
+# Note that within one day, an employee can enter and leave more than once.
+# The time spent in the office for a single entry is out_time - in_time.
+# Return the result table in any order
+
+# The result format is in the following example.
+
 # emp_id 跟 event_day 還有 in_time 為該表格的 primary key (具有唯一值的列組合)
 # 該表格顯示了員工進入辦公室以及離開辦公室的狀況
 # event_day 是發生的日期，in_time 為進入辦公室的時間，out_time 則是離開辦公室的時間
@@ -23,15 +29,10 @@
 # 確保同一天沒有兩個事件的重複，而且 in_time < out_time
 # 撰寫一個解決方案來計算員工每天在辦公室的時間(以分鐘為單位)
 
-# Note that within one day, an employee can enter and leave more than once.
-# The time spent in the office for a single entry is out_time - in_time.
-# Return the result table in any order
-
 # 請注意，在一天之內一名員工可以多次進入和離開
 # time spent 為辦公室花費的時間，計算方式為 out_time - in_time
 # 回傳任意順序的結果
 
-# The result format is in the following example.
 # 結果顯示如下
 
 ### Example 範例:
