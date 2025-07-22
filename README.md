@@ -197,7 +197,7 @@ The result format is in the following example.
 
 ---
 
-### 2882. Drop Duplicate Rows 刪除重複行 [(連結)][https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2882.%20Drop%20Duplicate%20Rows]
+### 2882. Drop Duplicate Rows 刪除重複行 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2882.%20Drop%20Duplicate%20Rows)
 
 ```py 
 DataFrame customers
