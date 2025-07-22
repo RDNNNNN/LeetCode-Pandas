@@ -89,16 +89,6 @@ The DataFrame should have two columns, `student_id` and `age`, and be in the sam
 
 The result format is in the following example.
 
-### 中文
-
-撰寫一個解決方案，從名為 `student_data` 的 2D 列表建立一個 DataFrame
-
-這個 2D 列表包含一些學生的 ID 和年齡
-
-DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D 列表相同
-
-結果顯示如下
-
 ---
 
 ### 2878. Get the Size of a DataFrame 取得 DataFrame 的大小 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2878.%20Get%20the%20Size%20of%20a%20DataFrame)
@@ -146,8 +136,6 @@ DataFrame: employees
 
 Write a solution to display the first 3 rows of this DataFrame.
 
-撰寫一個解決方案來顯示此資料表的前三行 (rows) 資料
-
 ---
 
 ### 2880. Select Data 篩選數據 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2880.%20Select%20Data)
@@ -168,10 +156,6 @@ DataFrame students
 Write a solution to select the name and age of the student with `student_id = 101`.
 
 The result format is in the following example.
-
-撰寫一個解決方案，選取 `student_id = 101` 的名字跟年齡
-
-結果顯示如下
 
 ---
 
