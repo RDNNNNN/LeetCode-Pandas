@@ -197,6 +197,29 @@ The result format is in the following example.
 
 ---
 
+### 2882. Drop Duplicate Rows 刪除重複行 [(連結)][https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2882.%20Drop%20Duplicate%20Rows]
+
+```py 
+DataFrame customers
++-------------+--------+
+| Column Name | Type   |
++-------------+--------+
+| customer_id | int    |
+| name        | object |
+| email       | object |
++-------------+--------+
+```
+
+### 題目
+
+There are some duplicate rows in the DataFrame based on the email column.
+
+Write a solution to remove these duplicate rows and keep only the first occurrence.
+
+The result format is in the following example.
+
+---
+
 ### 2884. Modify Columns 修改欄位 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2884.%20Modify%20Columns)
 
 ```py
