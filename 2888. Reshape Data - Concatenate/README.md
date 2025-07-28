@@ -30,9 +30,7 @@ The result format is in the following example.
 
 結果顯示如下
 
----
-
-### Example 範例:
+### Example 範例
 
 ```py
 Input:
@@ -68,15 +66,13 @@ Output:
 +------------+---------+-----+
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 The two DataFramess are stacked vertically, and their rows are combined.
 
 將兩個 DataFrame 垂直堆疊，並合併行 (rows)
 
----
-
-### Code
+### Code 程式碼
 
 ```py
 import pandas as pd
