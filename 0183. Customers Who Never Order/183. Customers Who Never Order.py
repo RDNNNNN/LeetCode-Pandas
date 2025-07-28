@@ -11,8 +11,6 @@
 # id is the primary key (column with unique values) for this table.
 # Each row of this table indicates the ID and name of a customer.
 
-### 中文
-
 # id 是該表的主鍵(具有唯一值的欄位)
 # 表格的每一行表示一個客戶的ID和姓名
 
@@ -27,8 +25,6 @@
 # id is the primary key (column with unique values) for this table.
 # customerId is a foreign key (reference columns) of the ID from the Customers table.
 # Each row of this table indicates the ID of an order and the ID of the customer who ordered it.
-
-### 中文
 
 # id 是該表的主鍵（具有唯一值的欄位）
 # customerId 是 Customers 表中 ID 的外鍵(參考列)
