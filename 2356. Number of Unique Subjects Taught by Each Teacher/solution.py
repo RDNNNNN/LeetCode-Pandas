@@ -1,5 +1,6 @@
 ## 2356. Number of Unique Subjects Taught by Each Teacher 每位教師教授的獨特科目數量
 
+# Table: Teacher
 # +-------------+------+
 # | Column Name | Type |
 # +-------------+------+
@@ -10,17 +11,23 @@
 
 # (subject_id, dept_id) is the primary key (combinations of columns with unique values) of this table.
 # Each row in this table indicates that the teacher with teacher_id teaches the subject subject_id in the department dept_id.
+
+# subject_id 跟 dept_id 為表格的 primary key (具有唯一值的列組合)
+# 該表中的每一行 (row) 具有 teacher_id 的教師以及科目 subject_id 還有系所 dept_id
+
+### 題目
+
 # Write a solution to calculate the number of unique subjects each teacher teaches in the university.
 # Return the result table in any order
 # The result format is shown in the following example.
 
-# subject_id 跟 dept_id 為表格的 primary key (具有唯一值的列組合)
-# 該表中的每一行 (row) 具有 teacher_id 的教師以及科目 subject_id 還有系所 dept_id
+### 中文
+
 # 撰寫一個解決方案來計算每個老師在大學教授的唯一科目數量
 # 回傳任意順序的結果
 # 結果顯示如下
 
-### Example 範例:
+### Example 範例
 
 # Input:
 # Teacher table:
@@ -44,7 +51,7 @@
 # | 2          | 4   |
 # +------------+-----+
 
-### Explanation 解釋:
+### Explanation 解釋
 
 # Teacher 1:
 #   - They teach subject 2 in departments 3 and 4.
@@ -62,7 +69,7 @@
 #   - 他們在第 1 系所教授第 3 科目
 #   - 他們在第 1 系所教授第 4 科目
 
-### Code
+### Code 程式碼
 
 import pandas as pd
 
