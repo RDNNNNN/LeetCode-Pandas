@@ -11,15 +11,21 @@
 # | ...         | ...    |
 # +-------------+--------+
 
+### 題目
+
 # Write a solution to calculate and display the number of rows and columns of players.
 # Return the result as an array:
 # [number of rows, number of columns]
 # The result format is in the following example.
 
+### 中文
+
 # 撰寫一個解決方案來計算並顯示 players 的行數 (rows) 跟列數 (columns)
 # 以列表的形式回傳結果
 # [number of rows, number of columns]
 # 結果顯示如下
+
+### Example 範例
 
 # Input:
 # +-----------+----------+-----+-------------+--------------------+
@@ -40,13 +46,13 @@
 # Output:
 # [10, 5]
 
-# Explanation 解釋:
+### Explanation 解釋
 
 # This DataFrame contains 10 rows and 5 columns.
 
 # 這個 DataFrame 包含 10 行 (rows) 5 列 (columns)
 
-### Code
+### Code 程式碼
 
 import pandas as pd
 

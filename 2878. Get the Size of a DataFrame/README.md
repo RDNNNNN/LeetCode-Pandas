@@ -33,9 +33,7 @@ The result format is in the following example.
 
 結果顯示如下
 
----
-
-### Example 範例:
+### Example 範例
 
 ```py
 Input:
@@ -58,17 +56,13 @@ Output:
 [10, 5]
 ```
 
----
-
-### Explanation 解釋:
+### Explanation 解釋
 
 This DataFrame contains 10 rows and 5 columns.
 
 這個 DataFrame 包含 10 行 (rows) 5 列 (columns)
 
----
-
-### Code
+### Code 程式碼
 
 ```py
 import pandas as pd
