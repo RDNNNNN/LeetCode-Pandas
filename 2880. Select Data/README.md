@@ -21,8 +21,6 @@ The result format is in the following example.
 
 結果顯示如下
 
----
-
 ### Example 範例:
 
 ```py 
@@ -44,15 +42,13 @@ Output:
 +---------+-----+
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 Student Ulysses has `student_id = 101`, we select the `name` and `age`.
 
 學生 Ulysses 的 `student_id = 101`，我們篩選此 `name` 跟 `age`
 
----
-
-### Code
+### Code 程式碼
 
 ```py 
 import pandas as pd
