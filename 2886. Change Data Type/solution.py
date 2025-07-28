@@ -10,15 +10,19 @@
 # | grade       | float  |
 # +-------------+--------+
 
+### 題目
+
 # Write a solution to correct the errors:
 # The grade column is stored as floats, convert it to integers.
 # The result format is in the following example.
+
+### 中文
 
 # 撰寫一個解決方案來修正錯誤
 # 成績列 (column) 為浮點數，將其轉為整數
 # 結果顯示如下
 
-### Example 範例:
+### Example 範例
 
 # Input:
 # DataFrame students:
@@ -37,13 +41,13 @@
 # | 2          | Kate | 15  | 87    |
 # +------------+------+-----+-------+
 
-### Explanation 解釋:
+### Explanation 解釋
 
 # The data types of the column grade is converted to int.
 
 # 將 grade 列 (column) 的資料型別轉換為 int
 
-### Code
+### Code 程式碼
 
 import pandas as pd
 
