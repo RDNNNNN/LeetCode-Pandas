@@ -19,13 +19,15 @@ Write a solution to remove these duplicate rows and keep only the first occurren
 
 The result format is in the following example.
 
+### 中文
+
 根據電子郵件的列 (column)，DataFrame 存在一些重複的行 (rows)
 
 撰寫一個解決方案來刪除重複的行 (rows) 並只保留第一個出現的行 (rows)
 
 結果顯示如下
  
-### Example 範例:
+### Example 範例
 
 ```py
 Input:
@@ -52,15 +54,14 @@ Output:
 +-------------+---------+---------------------+
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 `Alic (customer_id = 4)` and `Finn (customer_id = 5)` both use `john@example.com`, so only the first occurrence of this email is retained.
 
 `Alic (customer_id = 4)` 跟 `Finn (customer_id = 5)` 都使用了 `john@example.com`，因此只保留第一個出現的電子郵件
 
----
 
-### Code
+### Code 程式碼
 
 ```py 
 import pandas as pd
