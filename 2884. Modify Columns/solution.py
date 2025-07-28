@@ -8,15 +8,19 @@
 # | salary      | int    |
 # +-------------+--------+
 
+### 題目
+
 # A company intends to give its employees a pay rise.
 # Write a solution to modify the salary column by multiplying each salary by 2.
 # The result format is in the following example.
+
+### 中文
 
 # 一間公司打算給員工加薪
 # 攥寫一個解決方案來將每個薪資乘以 2
 # 結果格式如下
 
-### Example 範例:
+### Example 範例
 
 # Input:
 # DataFrame employees
@@ -39,13 +43,13 @@
 # | Ulysses | 109732 |
 # +---------+--------+
 
-### Explanation 解釋:
+### Explanation 解釋
 
 # Every salary has been doubled.
 
 # 每個薪資都被加倍了
 
-### Code
+### Code 程式碼
 
 import pandas as pd
 
