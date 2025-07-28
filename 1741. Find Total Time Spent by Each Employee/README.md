@@ -9,19 +9,21 @@
 | in_time     | int  |
 | out_time    | int  |
 +-------------+------+
+
+(emp_id, event_day, in_time) is the primary key (combinations of columns with unique values) of this table.
+The table shows the employees' entries and exits in an office.
+event_day is the day at which this event happened, in_time is the minute at which the employee entered the office, and out_time is the minute at which they left the office.
+in_time and out_time are between 1 and 1440.
+It is guaranteed that no two events on the same day intersect in time, and in_time < out_time.
+emp_id 跟 event_day 還有 in_time 為該表格的 primary key (具有唯一值的列組合)
+
+該表格顯示了員工進入辦公室以及離開辦公室的狀況
+event_day 是發生的日期，in_time 為進入辦公室的時間，out_time 則是離開辦公室的時間
+in_time 跟 out_time 介於 1 到 1440 之間
+確保同一天沒有兩個事件的重複，而且 in_time < out_time
 ```
 
 ### 題目
-
-(emp_id, event_day, in_time) is the primary key (combinations of columns with unique values) of this table.
-
-The table shows the employees' entries and exits in an office.
-
-event_day is the day at which this event happened, in_time is the minute at which the employee entered the office, and out_time is the minute at which they left the office.
-
-in_time and out_time are between `1` and `1440`.
-
-It is guaranteed that no two events on the same day intersect in time, `and in_time < out_time`.
 
 Write a solution to calculate the total time in minutes spent by each employee on each day at the office.
 
@@ -34,16 +36,6 @@ Return the result table in any order
 The result format is in the following example.
 
 ### 中文
-
-`emp_id` 跟 `event_day` 還有 `in_time` 為該表格的 primary key (具有唯一值的列組合)
-
-該表格顯示了員工進入辦公室以及離開辦公室的狀況
-
-`event_day` 是發生的日期，`in_time` 為進入辦公室的時間，`out_time` 則是離開辦公室的時間
-
-`in_time` 跟 `out_time` 介於 `1` 到 `1440` 之間
-
-確保同一天沒有兩個事件的重複，而且 `in_time < out_time`
 
 撰寫一個解決方案來計算員工每天在辦公室的時間(以分鐘為單位)，
 
