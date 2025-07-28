@@ -26,8 +26,6 @@ The result format is in the following example.
 
 結果顯示如下
 
----
-
 ### Example 範例:
 
 ```py
@@ -57,15 +55,13 @@ Output:
 +---------+--------+--------+
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 A new column bonus is created by doubling the value in the column salary.
 
 建立名為 `bonus` 的新列 (column) 並且值為 `salay` 的兩倍
 
----
-
-### Code
+### Code 程式碼
 
 ```py
 import pandas as pd

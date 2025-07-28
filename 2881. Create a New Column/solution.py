@@ -16,7 +16,7 @@
 # 撰寫一個解決方案名為 bonus 的新列 (column)，值為 salary 的兩倍
 # 結果顯示如下
 
-### Example 範例:
+### Example 範例
 
 # Input:
 # DataFrame employees
@@ -43,12 +43,12 @@
 # | Thomas  | 24433  | 48866  |
 # +---------+--------+--------+
 
-### Explanation 解釋:
+### Explanation 解釋
 
 # A new column bonus is created by doubling the value in the column salary.
 # 建立名為 bonus 的新列 (column) 並且值為 salay 的兩倍
 
-### Code
+### Code 程式碼
 
 import pandas as pd
 
@@ -56,6 +56,7 @@ import pandas as pd
 def createBonusColumn(employees: pd.DataFrame) -> pd.DataFrame:
     employees["bonus"] = employees["salary"] * 2
     return employees
+
 
 # 直觀且高效的操作，因為 pandas 會對欄位進行向量化操作 (vectorized operations)
 # 運算會比 apply() 或是迴圈更快
