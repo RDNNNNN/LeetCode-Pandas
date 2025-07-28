@@ -1,6 +1,61 @@
+## 183. Customers Who Never Order 從不點餐的顧客 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0183.%20Customers%20Who%20Never%20Order)
+
+```py
+Table: Customers
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| name        | varchar |
++-------------+---------+
+
+id is the primary key (column with unique values) for this table.
+Each row of this table indicates the ID and name of a customer.
+
+id 是該表的主鍵（具有唯一值的欄位）
+表格的每一行表示一個客戶的ID和姓名
+```
+ 
+```py
+Table: Orders
++-------------+------+
+| Column Name | Type |
++-------------+------+
+| id          | int  |
+| customerId  | int  |
++-------------+------+
+
+id is the primary key (column with unique values) for this table.
+customerId is a foreign key (reference columns) of the ID from the Customers table.
+Each row of this table indicates the ID of an order and the ID of the customer who ordered it.
+
+id 是該表的主鍵(具有唯一值的欄位)
+customerId 是 Customers 表中 ID 的外鍵(參考列)
+表格的每一行表示一個訂單的ID和下訂單的客戶的ID
+```
+
+### 題目
+
+Write a solution to find all customers who never order anything.
+
+Return the result table in any order.
+
+The result format is in the following example.
+ 
+### 中文
+
+編寫一個解決方案來找出所有從未訂購任何東西的顧客
+
+以任意順序傳回結果表
+
+結果顯示如下
+
+---
+
 ### 1741. Find Total Time Spent by Each Employee 找出每位員工花費的總時間 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1741.%20Find%20Total%20Time%20Spent%20by%20Each%20Employee)
 
 ```py
+Table: Employees
 +-------------+------+
 | Column Name | Type |
 +-------------+------+
@@ -9,19 +64,20 @@
 | in_time     | int  |
 | out_time    | int  |
 +-------------+------+
+
+(emp_id, event_day, in_time) is the primary key (combinations of columns with unique values) of this table.
+The table shows the employees' entries and exits in an office.
+event_day is the day at which this event happened, in_time is the minute at which the employee entered the office, and out_time is the minute at which they left the office.
+in_time and out_time are between `1` and `1440`.
+It is guaranteed that no two events on the same day intersect in time, `and in_time < out_time`.
+
+該表格顯示了員工進入辦公室以及離開辦公室的狀況
+event_day 是發生的日期，in_time 為進入辦公室的時間，out_time 則是離開辦公室的時間
+in_time 跟 out_time 介於 1 到 1440 之間
+確保同一天沒有兩個事件的重複，而且 in_time < out_time
 ```
 
 ### 題目
-
-(emp_id, event_day, in_time) is the primary key (combinations of columns with unique values) of this table.
-
-The table shows the employees' entries and exits in an office.
-
-event_day is the day at which this event happened, in_time is the minute at which the employee entered the office, and out_time is the minute at which they left the office.
-
-in_time and out_time are between `1` and `1440`.
-
-It is guaranteed that no two events on the same day intersect in time, `and in_time < out_time`.
 
 Write a solution to calculate the total time in minutes spent by each employee on each day at the office.
 
@@ -33,11 +89,24 @@ Return the result table in any order
 
 The result format is in the following example.
 
+### 中文
+
+撰寫一個解決方案來計算員工每天在辦公室的時間(以分鐘為單位)，
+
+請注意，在一天之內一名員工可以多次進入和離開
+
+`time spent` 為辦公室花費的時間，計算方式為 `out_time - in_time`
+
+回傳任意順序的結果
+
+結果顯示如下
+
 ---
 
 ### 1757. Recyclable and Low Fat Products 可回收和低脂產品 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1757.%20Recyclable%20and%20Low%20Fat%20Products)
 
 ```py
+Table: Products
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -45,15 +114,17 @@ The result format is in the following example.
 | low_fats    | enum    |
 | recyclable  | enum    |
 +-------------+---------+
+
+product_id is the primary key (column with unique values) for this table.
+low_fats is an ENUM (category) of type ('Y', 'N') where Y means this product is low fat and N means it is not.
+recyclable is an ENUM (category) of types ('Y', 'N') where Y means this product is recyclable and N means it is not.
+
+product_id 為表格的 primary key (具有唯一值的欄位)
+low_fats 是一種 ENUM (類別)，其中 Y 表示這個產品為低脂，N 則不為低脂產品
+recyclable 是一種 ENUM (類別)，其中 Y 表示這個產品可回收，N 則不能被回收
 ```
 
 ### 題目
-
-`product_id` is the primary key (column with unique values) for this table.
-
-`low_fats` is an `ENUM` (category) of type ('Y', 'N') where `Y` means this product is low fat and `N` means it is not.
-
-`recyclable` is an `ENUM` (category) of types ('Y', 'N') where `Y` means this product is recyclable and `N` means it is not.
 
 Write a solution to find the ids of products that are both low fat and recyclable.
 
@@ -61,11 +132,20 @@ Return the result table in any order.
 
 The result format is in the following example.
 
+### 中文
+
+寫出一個解決方案來尋找低脂且可回收的產品 ID
+
+以任意順序回傳結果
+
+結果顯示如下
+
 ---
 
 ### 2356. Number of Unique Subjects Taught by Each Teacher 每位教師教授的獨特科目數量 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2356.%20Number%20of%20Unique%20Subjects%20Taught%20by%20Each%20Teacher)
 
 ```py
+Table: Teacher
 +-------------+------+
 | Column Name | Type |
 +-------------+------+
@@ -73,7 +153,29 @@ The result format is in the following example.
 | subject_id  | int  |
 | dept_id     | int  |
 +-------------+------+
+
+(subject_id, dept_id) is the primary key (combinations of columns with unique values) of this table.
+Each row in this table indicates that the teacher with teacher_id teaches the subject subject_id in the department dept_id.
+
+subject_id 跟 dept_id 為表格的 primary key (具有唯一值的列組合)
+該表中的每一個 row 具有 teacher_id 的教師以及科目 subject_id 還有系所 dept_id
 ```
+
+### 題目
+
+Write a solution to calculate the number of unique subjects each teacher teaches in the university.
+
+Return the result table in any order.
+
+The result format is shown in the following example.
+
+### 中文
+
+撰寫一個解決方案來計算每個老師在大學教授的唯一科目數量
+
+回傳任意順序的結果
+
+結果顯示如下
 
 ---
 
@@ -88,6 +190,16 @@ This 2D list contains the IDs and ages of some students.
 The DataFrame should have two columns, `student_id` and `age`, and be in the same order as the original 2D list.
 
 The result format is in the following example.
+
+### 中文
+
+撰寫一個解決方案，從名為 `student_data` 的 2D 列表建立一個 DataFrame
+
+這個 2D 列表包含一些學生的 ID 和年齡
+
+DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D 列表相同
+
+結果顯示如下
 
 ---
 
@@ -116,6 +228,16 @@ Return the result as an array:
 
 The result format is in the following example.
 
+### 中文
+
+撰寫一個解決方案來計算並顯示 players 的行數 (rows) 跟列數 (columns)
+
+以列表的形式回傳結果
+
+`[number of rows, number of columns]`
+
+結果顯示如下
+
 ---
 
 ### 2879. Display the First Three Rows 顯示前三行資料 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2879.%20Display%20the%20First%20Three%20Rows)
@@ -135,6 +257,8 @@ DataFrame: employees
 ### 題目
 
 Write a solution to display the first 3 rows of this DataFrame.
+
+撰寫一個解決方案來顯示此資料表的前三行 (rows) 資料
 
 ---
 
@@ -157,6 +281,10 @@ Write a solution to select the name and age of the student with `student_id = 10
 
 The result format is in the following example.
 
+撰寫一個解決方案，選取 `student_id = 101` 的名字跟年齡
+
+結果顯示如下
+
 ---
 
 ### 2881. Create a New Column 建立一個新的列 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2881.%20Create%20a%20New%20Column)
@@ -178,6 +306,14 @@ A company plans to provide its employees with a bonus.
 Write a solution to create a new column name `bonus` that contains the doubled values of the `salary` column.
 
 The result format is in the following example.
+
+### 中文
+
+一間公司計畫給員工提供獎金
+
+撰寫一個解決方案名為 `bonus` 的新列，值為 `salary` 的兩倍
+
+結果顯示如下
 
 ---
 
@@ -202,6 +338,14 @@ Write a solution to remove these duplicate rows and keep only the first occurren
 
 The result format is in the following example.
 
+### 中文
+
+根據電子郵件的列 (column)，DataFrame 存在一些重複的行 (rows)
+
+撰寫一個解決方案來刪除重複的行 (rows) 並只保留第一個出現的行 (rows)
+
+結果顯示如下
+
 ---
 
 ### 2884. Modify Columns 修改欄位 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2884.%20Modify%20Columns)
@@ -223,6 +367,14 @@ A company intends to give its employees a pay rise.
 Write a solution to modify the salary column by multpylying each salary by 2.
 
 The result format is in the following example.
+
+### 中文
+
+一間公司打算給員工加薪
+
+攥寫一個解決方案來將每個薪資乘以 2
+
+結果顯示如下
 
 ---
 
@@ -247,6 +399,14 @@ Write a solution to correct the errors:
 The grade column is stored as floats, convert it to integers.
 
 The result format is in the following example.
+
+### 中文
+
+撰寫一個解決方案來修正錯誤
+
+成績的列 (column) 為浮點數，將其轉為整數
+
+結果顯示如下
 
 ---
 
@@ -277,6 +437,10 @@ DataFrame df2
 Write a solution to concatenate these two DataFrames vertically into one DataFrame.
 
 The result format is in the following example.
+
+寫一個解決方案，將這兩個 DataFrame 垂直堆疊成一個 DataFrame
+
+結果顯示如下
 
 ---
 
@@ -310,3 +474,19 @@ The part before the `@` symbol contains only alphanumeric characters and undersc
 The part after the `@` symbol and before .com contains a domain name that contains only letters.
 
 Return the result table ordered by `user_id` in ascending order.
+
+### 中文
+
+編寫一個解決方法來群找所有的有效電子郵件地址
+
+有效的電子郵件地址符合以下條件
+
+包含一個 `@` 符號
+
+以 `.com` 結尾
+
+`@` 符號以前的部分只有包含字母數字和底線
+
+`@` 符號之後的和 `.com` 之前的部分只有包含字母的網域
+
+回傳以 `user_id` 升序排列的結果表格
