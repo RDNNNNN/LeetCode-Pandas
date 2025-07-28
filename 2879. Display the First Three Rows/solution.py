@@ -14,7 +14,7 @@
 
 # 撰寫一個解決方案來顯示此資料表的前三行 (rows) 資料
 
-###  Example 範例:
+###  Example 範例
 
 # Input:
 
@@ -39,12 +39,13 @@
 # | 9           | Tatiana | Engineering | 33805  |
 # +-------------+---------+-------------+--------+
 
-### Explanation 解釋:
+### Explanation 解釋
 
 # Only the first 3 rows are displayed.
+
 # 僅顯示資料表中的前三行 (rows) 資料。
 
-### Code
+### Code 程式碼
 
 import pandas as pd
 
