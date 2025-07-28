@@ -1,6 +1,7 @@
 ## 1741. Find Total Time Spent by Each Employee 找出每位員工花費的總時間
 
 ```py
+Table: Employees
 +-------------+------+
 | Column Name | Type |
 +-------------+------+
@@ -47,9 +48,7 @@ The result format is in the following example.
 
 結果顯示如下
 
----
-
-### Example 範例:
+### Example 範例
 
 ```py
 Input:
@@ -75,7 +74,7 @@ Output:
 +------------+--------+------------+
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 Employee 1 has three events: 
 
@@ -99,9 +98,7 @@ one on day 2020-11-28 with a total of `(33 - 3) = 30`, and one on day 2020-12-09
 
 一個發生在 2020 年 12 月 09 日，總計 `(74 - 47) = 27`
 
----
-
-### Code
+### Code 程式碼
 
 ```py
 import pandas as pd

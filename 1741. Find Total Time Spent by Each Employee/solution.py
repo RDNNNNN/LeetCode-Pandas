@@ -1,5 +1,6 @@
 ## 1741. Find Total Time Spent by Each Employee 找出每位員工花費的總時間
 
+# Table: Employees
 # +-------------+------+
 # | Column Name | Type |
 # +-------------+------+
