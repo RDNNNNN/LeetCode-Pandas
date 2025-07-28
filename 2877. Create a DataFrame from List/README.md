@@ -20,9 +20,7 @@ DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D 
 
 結果顯示如下
 
----
-
-### Example 範例:
+### Example 範例
 
 ```py
 Input:
@@ -45,15 +43,13 @@ Output:
 +------------+-----+
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 A DataFrame was created on top of `student_data`, with two columns named `student_id` and `age`.
 
 在 `student_data` 之上建立一個 DataFrame，包含一個名為`student_id` 和 `age` 的兩個欄位
 
----
-
-### Code
+### Code 程式碼
 
 ```py
 import pandas as pd
