@@ -59,7 +59,7 @@ Output:
 +-------------+
 ```
 
-### Explanation 解釋:
+### Explanation 解釋
 
 Only products `1` and `3` are both low fat and recyclable.
 
