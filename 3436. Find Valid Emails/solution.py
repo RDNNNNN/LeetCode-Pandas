@@ -1,5 +1,6 @@
 ## 3436. Find Valid Emails 尋找有效電子郵件
 
+# Table: Users
 # +-----------------+---------+
 # | Column Name     | Type    |
 # +-----------------+---------+
@@ -9,7 +10,13 @@
 
 # (user_id) is the unique key for this table.
 # Each row contains a user's unique ID and email address.
-# Write a solution to find all the valid email addresses. 
+
+# user_id 為該表格的唯一值
+# 每一行 (row) 包含使用者的唯一 ID 和電子郵件地址
+
+### 題目
+
+# Write a solution to find all the valid email addresses.
 # A valid email address meets the following criteria:
 # It contains exactly one @ symbol.
 # It ends with .com.
@@ -17,8 +24,8 @@
 # The part after the @ symbol and before .com contains a domain name that contains only letters.
 # Return the result table ordered by user_id in ascending order.
 
-# user_id 為該表格的唯一值
-# 每一行 (row) 包含使用者的唯一 ID 和電子郵件地址
+### 中文
+
 # 編寫一個解決方法來群找所有的有效電子郵件地址
 # 有效的電子郵件地址符合以下條件
 # 包含一個 @ 符號
@@ -27,7 +34,7 @@
 # @ 符號之後的和 .com 之前的部分只有包含字母的網域
 # 回傳以 user_id 升序排列的結果表格
 
-### Example 範例:
+### Example 範例
 
 # Input:
 # Users table:
@@ -49,7 +56,7 @@
 # | 4       | david@domain.com  |
 # +---------+-------------------+
 
-### Explanation 解釋:
+### Explanation 解釋
 
 # alice@example.com is valid because it contains one @, alice is alphanumeric, and example.com starts with a letter and ends with .com.
 # bob_at_example.com is invalid because it contains an underscore instead of an @.
@@ -58,6 +65,8 @@
 # eve@invalid is invalid because the domain does not end with .com.
 # Result table is ordered by user_id in ascending order.
 
+### 中文
+
 # alice@example.com 有效，因為它包含一個 @，alice 是字母數字，example.com 以字母開頭並以 .com 結尾
 # bob_at_example.com 無效，因為它包含下劃線而不是 @
 # charlie@example.net 無效，因為網域不以 .com 結尾
@@ -65,14 +74,16 @@
 # eve@invalid 無效，因為網域不以 .com 結尾
 # 結果表格依照 user_id 升序排列
 
-### Code
+### Code 程式碼
 
 import pandas as pd
 
+
 def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
-    pattern = r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$'
-    valid_emails = users[users['email'].str.match(pattern, na=False)]
-    return valid_emails.sort_values(by='user_id').reset_index(drop=True)
+    pattern = r"^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$"
+    valid_emails = users[users["email"].str.match(pattern, na=False)]
+    return valid_emails.sort_values(by="user_id").reset_index(drop=True)
+
 
 # 正則表達式需要使用 r''，類似 f 字串
 # ^ 為字串開頭
@@ -107,10 +118,10 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 #     pattern = re.compile(r'^[a-zA-Z0-9_]+@[a-zA-Z]+\.com$')
 #     def is_valid_email(email):
 #         return bool(pattern.fullmatch(email))
-    
+
 #     valid_emails = users[users['email'].apply(is_valid_email)]
 #     return valid_emails.sort_values(by='user_id').reset_index(drop=True)
-    
+
 # apply() 寫法
 # re.compile() 用來預編譯正則表達式，只需要解析一次，適用於大量重複使用時可提升效率
 # 如果沒使用 re.compile 則在每次使用時都需要重新解析，效率會變差
@@ -118,7 +129,7 @@ def find_valid_emails(users: pd.DataFrame) -> pd.DataFrame:
 # apply() 會逐行處理 email 欄位，對 email 的每一行執行 is_vaild_email() 並回傳 True 或是 False
 # user[...] 只保留 True 的行數
 
-    
+
 # import pandas as pd
 # import re
 
