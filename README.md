@@ -52,7 +52,7 @@ The result format is in the following example.
 
 ---
 
-## 595. Big Countries 大國家 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0595.%20Big%20Countries)
+### 595. Big Countries 大國家 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0595.%20Big%20Countries)
 
 ```py
 Table: World
