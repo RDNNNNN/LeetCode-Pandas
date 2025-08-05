@@ -12,7 +12,7 @@
 # Each row of this table indicates the ID and name of a customer.
 
 # id 是該表的主鍵(具有唯一值的欄位)
-# 表格的每一行表示一個客戶的ID和姓名
+# 表格的每一行表示一個客戶的 ID 和姓名
 
 # Table: Orders
 # +-------------+------+
@@ -28,7 +28,7 @@
 
 # id 是該表的主鍵（具有唯一值的欄位）
 # customerId 是 Customers 表中 ID 的外鍵(參考列)
-# 表格的每一行表示一個訂單的ID和下訂單的客戶的ID
+# 表格的每一行表示一個訂單的 ID 和下訂單的客戶的 ID
 
 ### 題目
 
