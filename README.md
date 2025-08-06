@@ -27,67 +27,7 @@ The result format is in the following example.
 
 結果顯示如下
 
-### Example 1 範例
-
-```py
-Input: 
-Employee table:
-+----+--------+
-| id | salary |
-+----+--------+
-| 1  | 100    |
-| 2  | 200    |
-| 3  | 300    |
-+----+--------+
-
-n = 2
-
-Output: 
-+------------------------+
-| getNthHighestSalary(2) |
-+------------------------+
-| 200                    |
-+------------------------+
-```
-
-### Example 2 範例
-
-```py
-Input: 
-Employee table:
-+----+--------+
-| id | salary |
-+----+--------+
-| 1  | 100    |
-+----+--------+
-
-n = 2
-Output: 
-+------------------------+
-| getNthHighestSalary(2) |
-+------------------------+
-| null                   |
-+------------------------+
-```
-
-### Code 程式碼
-
-```py
-import pandas as pd
-
-def nth_highest_salary(employee: pd.DataFrame, N: int) -> pd.DataFrame:
-    sorted_salaries = employee["salary"].drop_duplicates().sort_values(ascending=False)
-    if N <= 0:
-        return pd.DataFrame({f"getNthHighestSalary({N})": [None]})
-    
-    if len(sorted_salaries) < N:
-        return pd.DataFrame({f"getNthHighestSalary({N})": [None]})
-    else:
-        return pd.DataFrame({f"getNthHighestSalary({N})": [sorted_salaries.iloc[N-1]]})
-```
-
 ---
-
 
 ### 183. Customers Who Never Order 從不點餐的顧客 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0183.%20Customers%20Who%20Never%20Order)
 
@@ -188,39 +128,6 @@ The result format is in the following example.
 以任意順序傳回結果表
 
 結果顯示如下
-
-### Example 範例
-
-```py
-Input: 
-World table:
-+-------------+-----------+---------+------------+--------------+
-| name        | continent | area    | population | gdp          |
-+-------------+-----------+---------+------------+--------------+
-| Afghanistan | Asia      | 652230  | 25500100   | 20343000000  |
-| Albania     | Europe    | 28748   | 2831741    | 12960000000  |
-| Algeria     | Africa    | 2381741 | 37100000   | 188681000000 |
-| Andorra     | Europe    | 468     | 78115      | 3712000000   |
-| Angola      | Africa    | 1246700 | 20609294   | 100990000000 |
-+-------------+-----------+---------+------------+--------------+
-
-Output: 
-+-------------+------------+---------+
-| name        | population | area    |
-+-------------+------------+---------+
-| Afghanistan | 25500100   | 652230  |
-| Algeria     | 37100000   | 2381741 |
-+-------------+------------+---------+
-```
-
-### Code 程式碼
-
-```py
-import pandas as pd
-
-def big_countries(world: pd.DataFrame) -> pd.DataFrame:
-    return world[["name", "population", "area"]].query("population >= 25000000 or area >= 3000000")
-```
 
 ---
 
@@ -515,6 +422,37 @@ The result format is in the following example.
 根據電子郵件的列 (column)，DataFrame 存在一些重複的行 (rows)
 
 撰寫一個解決方案來刪除重複的行 (rows) 並只保留第一個出現的行 (rows)
+
+結果顯示如下
+
+---
+
+### 2883. Drop Missing Data 刪除遺失的數據 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2883.%20Drop%20Missing%20Data)
+
+```py
+DataFrame customers
++-------------+--------+
+| Column Name | Type   |
++-------------+--------+
+| customer_id | int    |
+| name        | object |
+| email       | object |
++-------------+--------+
+```
+
+### 題目
+
+There are some duplicate rows in the DataFrame based on the email column.
+
+Write a solution to remove these duplicate rows and keep only the first occurrence.
+
+The result format is in the following example.
+
+### 中文
+
+根據電子郵件列，DataFrame 中存在一些重複的行
+
+編寫一個解決方案來刪除這些重複的行並僅保留第一個出現的行
 
 結果顯示如下
 
