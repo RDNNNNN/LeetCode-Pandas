@@ -169,41 +169,6 @@ The result format is in the following example.
 
 結果顯示如下
 
-### Example 範例
-
-```py
-Input: 
-Views table:
-+------------+-----------+-----------+------------+
-| article_id | author_id | viewer_id | view_date  |
-+------------+-----------+-----------+------------+
-| 1          | 3         | 5         | 2019-08-01 |
-| 1          | 3         | 6         | 2019-08-02 |
-| 2          | 7         | 7         | 2019-08-01 |
-| 2          | 7         | 6         | 2019-08-02 |
-| 4          | 7         | 1         | 2019-07-22 |
-| 3          | 4         | 4         | 2019-07-21 |
-| 3          | 4         | 4         | 2019-07-21 |
-+------------+-----------+-----------+------------+
-
-Output: 
-+------+
-| id   |
-+------+
-| 4    |
-| 7    |
-+------+
-```
-
-### Code 程式碼
-
-```py
-import pandas as pd
-
-def article_views(views: pd.DataFrame) -> pd.DataFrame:
-    return views.query("author_id == viewer_id")[['author_id']].rename(columns={'author_id':'id'}).drop_duplicates().sort_values('id')
-```
-
 ---
 
 ### 1741. Find Total Time Spent by Each Employee 找出每位員工花費的總時間 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1741.%20Find%20Total%20Time%20Spent%20by%20Each%20Employee)
