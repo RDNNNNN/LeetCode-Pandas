@@ -171,6 +171,58 @@ The result format is in the following example.
 
 ---
 
+### 1517. Find Users With Valid E-Mails 尋找有效電子郵件的用戶 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1517.%20Find%20Users%20With%20Valid%20E-Mails)
+
+```py
+Table: Users
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| user_id       | int     |
+| name          | varchar |
+| mail          | varchar |
++---------------+---------+
+
+`user_id` is the primary key (column with unique values) for this table.
+This table contains information of the users signed up in a website.
+Some e-mails are invalid.
+
+`user_id` 是該表的主鍵（具有唯一值的欄位）
+該表包含在網站上註冊的用戶的資訊
+有些電子郵件無效
+```
+
+### 題目
+
+Write a solution to find the users who have valid emails.
+
+A valid e-mail has a prefix name and a domain where:
+
+The prefix name is a string that may contain letters (upper or lower case), digits, underscore `_`, period `.`, and/or dash `-`. The prefix name must start with a letter.
+The domain is `@leetcode.com`.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+### 中文
+
+編寫一個解決方案來尋找擁有有效電子郵件的使用者
+
+有效的電子郵件具有前綴名稱和網域，其中：
+
+前綴名稱是一個字串，可能包含字母（大寫或小寫）、數字、底線 `_`、句點 `.`和 `/` 或破折號 `-`
+
+前綴名稱必須以字母開頭
+
+網域是 `@leetcode.com`
+
+以任意順序傳回結果表
+
+結果顯示如下
+
+---
+
 ### 1741. Find Total Time Spent by Each Employee 找出每位員工花費的總時間 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1741.%20Find%20Total%20Time%20Spent%20by%20Each%20Employee)
 
 ```py
