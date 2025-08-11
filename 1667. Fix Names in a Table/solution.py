@@ -1,4 +1,4 @@
-### 1667. Fix Names in a Table 修復表中的名稱
+## 1667. Fix Names in a Table 修復表中的名稱
 
 # Table: Users
 # +----------------+---------+
