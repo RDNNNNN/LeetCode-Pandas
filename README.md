@@ -221,7 +221,7 @@ The result format is in the following example.
 
 結果顯示如下
 
-### 1667. Fix Names in a Table 修復表中的名稱
+### 1667. Fix Names in a Table 修復表中的名稱 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1667.%20Fix%20Names%20in%20a%20Table)
 
 ```py
 Table: Users
