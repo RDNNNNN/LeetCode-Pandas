@@ -330,45 +330,6 @@ The result format is in the following example.
 
 結果顯示如下
 
-### Example 範例
-
-```py
-Input: 
-Tweets table:
-+----------+-----------------------------------+
-| tweet_id | content                           |
-+----------+-----------------------------------+
-| 1        | Let us Code                       |
-| 2        | More than fifteen chars are here! |
-+----------+-----------------------------------+
-Output: 
-+----------+
-| tweet_id |
-+----------+
-| 2        |
-+----------+
-```
-
-### Explanation 解釋
-
-Tweet 1 has length = 11. It is a valid tweet.
-
-Tweet 2 has length = 33. It is an invalid tweet.
-
-Tweet 1 的長度為 11 這是有效的推文
-
-Tweet 2 的長度為 33 這是無效的推文
-
-### Code 程式碼
-
-```py 
-import pandas as pd
-
-def invalid_tweets(tweets: pd.DataFrame) -> pd.DataFrame:
-    invailds_tweets = tweets[tweets["content"].str.len() > 15]
-    return invailds_tweets.drop(columns=["content"])
-```
-
 ---
 
 ### 1741. Find Total Time Spent by Each Employee 找出每位員工花費的總時間 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1741.%20Find%20Total%20Time%20Spent%20by%20Each%20Employee)
