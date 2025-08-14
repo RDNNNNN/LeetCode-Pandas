@@ -332,7 +332,7 @@ The result format is in the following example.
 
 ---
 
-## 1693. Daily Leads and Partners 每日商機和合作夥伴 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1693.%20Daily%20Leads%20and%20Partners)
+### 1693. Daily Leads and Partners 每日商機和合作夥伴 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1693.%20Daily%20Leads%20and%20Partners)
 
 ```py
 Table: DailySales
