@@ -9,13 +9,11 @@
 # | in_time     | int  |
 # | out_time    | int  |
 # +-------------+------+
-
 # (emp_id, event_day, in_time) is the primary key (combinations of columns with unique values) of this table.
 # The table shows the employees' entries and exits in an office.
 # event_day is the day at which this event happened, in_time is the minute at which the employee entered the office, and out_time is the minute at which they left the office.
 # in_time and out_time are between 1 and 1440.
 # It is guaranteed that no two events on the same day intersect in time, and in_time < out_time.
-
 # emp_id 跟 event_day 還有 in_time 為該表格的 primary key (具有唯一值的列組合)
 # 該表格顯示了員工進入辦公室以及離開辦公室的狀況
 # event_day 是發生的日期，in_time 為進入辦公室的時間，out_time 則是離開辦公室的時間
@@ -23,23 +21,20 @@
 # 確保同一天沒有兩個事件的重複，而且 in_time < out_time
 
 ### 題目
-
 # Write a solution to calculate the total time in minutes spent by each employee on each day at the office.
 # Note that within one day, an employee can enter and leave more than once.
-# The time spent in the office for a single entry is out_time - in_time.
+# The time spent in the office for a single entry is `out_time - in_time`.
 # Return the result table in any order
 # The result format is in the following example.
 
 ### 中文
-
 # 撰寫一個解決方案來計算員工每天在辦公室的時間(以分鐘為單位)
 # 請注意，在一天之內一名員工可以多次進入和離開
-# time spent 為辦公室花費的時間，計算方式為 out_time - in_time
+# time spent 為辦公室花費的時間，計算方式為 `out_time - in_time`
 # 回傳任意順序的結果
 # 結果顯示如下
 
 ### Example 範例
-
 # Input:
 # Employees table:
 # +--------+------------+---------+----------+
@@ -51,7 +46,6 @@
 # | 2      | 2020-11-28 | 3       | 33       |
 # | 2      | 2020-12-09 | 47      | 74       |
 # +--------+------------+---------+----------+
-
 # Output:
 # +------------+--------+------------+
 # | day        | emp_id | total_time |
@@ -63,20 +57,18 @@
 # +------------+--------+------------+
 
 ### Explanation 解釋
-
 # Employee 1 has three events:
-# two on day 2020-11-28 with a total of (32 - 4) + (200 - 55) = 173, and one on day 2020-12-03 with a total of (42 - 1) = 41.
-
-# 員工 1 有 3 個事件：
-# 2020 年 11 月 28 日有 2 個事件，總計 (32 - 4) + (200 - 55) = 173
-# 2020 年 12 月 3 日有 1 個事件，總計 (42 - 1) = 41
-
+# two on day 2020-11-28 with a total of `(32 - 4) + (200 - 55) = 173`, and one on day `2020-12-03` with a total of `(42 - 1) = 41`.
 # Employee 2 has two events:
-# one on day 2020-11-28 with a total of (33 - 3) = 30, and one on day 2020-12-09 with a total of (74 - 47) = 27.
+# one on day 2020-11-28 with a total of `(33 - 3) = 30`, and one on day 2020-12-09 with a total of `(74 - 47) = 27`.
 
+### 中文
+# 員工 1 有 3 個事件：
+# 2020 年 11 月 28 日有 2 個事件，總計 `(32 - 4) + (200 - 55) = 173`
+# 2020 年 12 月 3 日有 1 個事件，總計 `(42 - 1) = 41`
 # 員工 2 有 2 個事件：
-# 一個發生在 2020 年 11 月 28 日，總計 (33 - 3) = 30
-# 一個發生在 2020 年 12 月 09 日，總計 (74 - 47) = 27
+# 一個發生在 2020 年 11 月 28 日，總計 `(33 - 3) = 30`
+# 一個發生在 2020 年 12 月 09 日，總計 `(74 - 47) = 27`
 
 ### Code 程式碼
 
