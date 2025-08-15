@@ -10,14 +10,12 @@
 # | salary      | int    |
 # +-------------+--------+
 
+### 題目
 # Write a solution to display the first 3 rows of this DataFrame.
-
 # 撰寫一個解決方案來顯示此資料表的前三行 (rows) 資料
 
 ###  Example 範例
-
 # Input:
-
 # DataFrame employees
 # +-------------+-----------+-----------------------+--------+
 # | employee_id | name      | department            | salary |
@@ -29,7 +27,6 @@
 # | 49          | Jonathan  | HumanResources        | 23793  |
 # | 43          | Khaled    | Administration        | 40454  |
 # +-------------+-----------+-----------------------+--------+
-
 # Output:
 # +-------------+---------+-------------+--------+
 # | employee_id | name    | department  | salary |
@@ -40,13 +37,10 @@
 # +-------------+---------+-------------+--------+
 
 ### Explanation 解釋
-
 # Only the first 3 rows are displayed.
-
 # 僅顯示資料表中的前三行 (rows) 資料。
 
 ### Code 程式碼
-
 import pandas as pd
 
 
