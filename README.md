@@ -17,13 +17,17 @@ id 是此表的主鍵（具有唯一值的欄位）
 
 ### 題目
 
-Write a solution to find the nth highest distinct salary from the Employee table. If there are less than n distinct salaries, return null.
+Write a solution to find the `nth` highest distinct salary from the `Employee` table. 
+
+If there are less than `n` distinct salaries, return `null`.
 
 The result format is in the following example.
 
 ### 中文
 
-寫一個解決方案，從員工表中找出第 n 個最高不同的工資。如果不同的工資少於 n 個，則傳回 null
+寫一個解決方案，從員工表 `Employee` 中找出第 `n` 個最高不同的薪資
+
+如果不同的薪資少於 `n` 個，則傳回 `null`
 
 結果顯示如下
 
@@ -108,8 +112,8 @@ Each row of this table gives information about the name of a country, the contin
 
 A country is big if:
 
-it has an area of at least three million (i.e., 3000000 km2), or
-it has a population of at least twenty-five million (i.e., 25000000).
+it has an area of at least three million (i.e., `3000000` km2), or
+it has a population of at least twenty-five million (i.e., `25000000`).
 Write a solution to find the name, population, and area of the big countries.
 
 Return the result table in any order.
@@ -120,8 +124,9 @@ The result format is in the following example.
 
 如果一個國家有以下特點，那麼這個國家就很大：
 
-其面積至少為 300 萬平方公里（即 300,000 平方公里），或
-它的人口至少有二千五百萬（即25000000）
+其面積至少為 300 萬平方公里（即 `3000000` 平方公里）
+
+或者它的人口至少有二千五百萬（即 `25000000`）
 
 寫出解決方案來找出大國的名稱、人口和面積
 
@@ -157,7 +162,7 @@ Note that equal author_id and viewer_id indicate the same person.
 
 Write a solution to find all the authors that viewed at least one of their own articles.
 
-Return the result table sorted by id in ascending order.
+Return the result table sorted by `id` in ascending order.
 
 The result format is in the following example.
 
@@ -183,11 +188,11 @@ Table: Users
 | mail          | varchar |
 +---------------+---------+
 
-`user_id` is the primary key (column with unique values) for this table.
+user_id is the primary key (column with unique values) for this table.
 This table contains information of the users signed up in a website.
 Some e-mails are invalid.
 
-`user_id` 是該表的主鍵（具有唯一值的欄位）
+user_id 是該表的主鍵（具有唯一值的欄位）
 該表包含在網站上註冊的用戶的資訊
 有些電子郵件無效
 ```
@@ -245,7 +250,7 @@ user_id 是此表的主鍵（具有唯一值的列）
 
 Write a solution to fix the names so that only the first character is uppercase and the rest are lowercase.
 
-Return the result table ordered by user_id.
+Return the result table ordered by `user_id`.
 
 The result format is in the following example.
 
@@ -253,7 +258,7 @@ The result format is in the following example.
 
 編寫解決方案來修復名稱，以便只有第一個字符是大寫，其餘的是小寫
 
-返回由 `User_id` 排序的結果表
+返回由 `user_id` 排序的結果表
 
 結果顯示如下
 
@@ -314,7 +319,7 @@ content 是由字母數字元、`!`、`「」`組成，且不含其他特殊字�
 
 Write a solution to find the IDs of the invalid tweets. 
 
-The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.
+The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than `15`.
 
 Return the result table in any order.
 
@@ -324,7 +329,7 @@ The result format is in the following example.
 
 撰寫一個解決方案來尋找無效的 ID 
 
-如果推文內容的字元數大於 15，則該推文無效
+如果推文內容的字元數大於 `15`，則該推文無效
 
 以任意順序回傳這個結果表
 
@@ -676,29 +681,29 @@ The result format is in the following example.
 ### 2883. Drop Missing Data 刪除遺失的數據 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2883.%20Drop%20Missing%20Data)
 
 ```py
-DataFrame customers
+DataFrame students
 +-------------+--------+
 | Column Name | Type   |
 +-------------+--------+
-| customer_id | int    |
+| student_id  | int    |
 | name        | object |
-| email       | object |
+| age         | int    |
 +-------------+--------+
 ```
 
 ### 題目
 
-There are some duplicate rows in the DataFrame based on the email column.
+There are some rows having missing values in the `name` column.
 
-Write a solution to remove these duplicate rows and keep only the first occurrence.
+Write a solution to remove the rows with missing values.
 
 The result format is in the following example.
 
 ### 中文
 
-根據電子郵件列，DataFrame 中存在一些重複的行
+`name` 欄中有一些行存在缺失值
 
-編寫一個解決方案來刪除這些重複的行並僅保留第一個出現的行
+編寫一個解決方案來刪除這些缺失值的行
 
 結果顯示如下
 
@@ -720,7 +725,7 @@ DataFrame employees
 
 A company intends to give its employees a pay rise.
 
-Write a solution to modify the salary column by multpylying each salary by 2.
+Write a solution to modify the `salary` column by multpylying each salary by 2.
 
 The result format is in the following example.
 
@@ -728,7 +733,7 @@ The result format is in the following example.
 
 一間公司打算給員工加薪
 
-攥寫一個解決方案來將每個薪資乘以 2
+攥寫一個解決方案來將每個薪資 `salary` 乘以 2
 
 結果顯示如下
 
@@ -752,7 +757,7 @@ DataFrame students
 
 Write a solution to correct the errors:
 
-The grade column is stored as floats, convert it to integers.
+The `grade` column is stored as floats, convert it to integers.
 
 The result format is in the following example.
 
@@ -760,7 +765,7 @@ The result format is in the following example.
 
 撰寫一個解決方案來修正錯誤
 
-成績的列 (column) 為浮點數，將其轉為整數
+成績 `grade` 的列 (column) 為浮點數，將其轉為整數
 
 結果顯示如下
 
