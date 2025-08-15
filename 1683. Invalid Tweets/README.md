@@ -22,7 +22,7 @@ content 是由字母數字元、`!`、`「」`組成，且不含其他特殊字�
 
 Write a solution to find the IDs of the invalid tweets. 
 
-The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.
+The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than `15`.
 
 Return the result table in any order.
 
@@ -32,7 +32,7 @@ The result format is in the following example.
 
 撰寫一個解決方案來尋找無效的 ID 
 
-如果推文內容的字元數大於 15，則該推文無效
+如果推文內容的字元數大於 `15`，則該推文無效
 
 以任意順序回傳這個結果表
 
@@ -49,6 +49,7 @@ Tweets table:
 | 1        | Let us Code                       |
 | 2        | More than fifteen chars are here! |
 +----------+-----------------------------------+
+
 Output: 
 +----------+
 | tweet_id |
