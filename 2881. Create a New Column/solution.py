@@ -7,17 +7,14 @@
 # | name        | object |
 # | salary      | int.   |
 # +-------------+--------+
-
 # A company plans to provide its employees with a bonus.
-# Write a solution to create a new column name bonus that contains the doubled values of the salary column.
+# Write a solution to create a new column name `bonus` that contains the doubled values of the `salary` column.
 # The result format is in the following example.
-
 # 一間公司計畫給員工提供獎金
-# 撰寫一個解決方案名為 bonus 的新列 (column)，值為 salary 的兩倍
+# 撰寫一個解決方案名為 `bonus` 的新列 (column)，值為 `salary` 的兩倍
 # 結果顯示如下
 
 ### Example 範例
-
 # Input:
 # DataFrame employees
 # +---------+--------+
@@ -30,7 +27,6 @@
 # | Finn    | 74576  |
 # | Thomas  | 24433  |
 # +---------+--------+
-
 # Output:
 # +---------+--------+--------+
 # | name    | salary | bonus  |
@@ -44,12 +40,10 @@
 # +---------+--------+--------+
 
 ### Explanation 解釋
-
 # A new column bonus is created by doubling the value in the column salary.
 # 建立名為 bonus 的新列 (column) 並且值為 salay 的兩倍
 
 ### Code 程式碼
-
 import pandas as pd
 
 
