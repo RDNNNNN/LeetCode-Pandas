@@ -9,14 +9,13 @@
 # | age         | int    |
 # +-------------+--------+
 
+### 題目
 # Write a solution to select the name and age of the student with student_id = 101.
 # The result format is in the following example.
-
 # 撰寫一個解決方案，選取 student_id = 101 的名字跟年齡
 # 結果顯示如下
 
 ### Example 範例
-
 # Input:
 # +------------+---------+-----+
 # | student_id | name    | age |
@@ -26,7 +25,6 @@
 # | 128        | Henry   | 6   |
 # | 3          | Henry   | 11  |
 # +------------+---------+-----+
-
 # Output:
 # +---------+-----+
 # | name    | age |
@@ -35,13 +33,10 @@
 # +---------+-----+
 
 ### Explanation 解釋
-
 # Student Ulysses has student_id = 101, we select the name and age.
-
 # 學生 Ulysses 的 student_id = 101，我們篩選此 name 跟 age
 
 ### Code 程式碼
-
 import pandas as pd
 
 
