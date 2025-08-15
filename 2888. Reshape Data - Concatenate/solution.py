@@ -8,7 +8,6 @@
 # | name        | object |
 # | age         | int    |
 # +-------------+--------+
-
 # DataFrame df2
 # +-------------+--------+
 # | Column Name | Type   |
@@ -19,15 +18,12 @@
 # +-------------+--------+
 
 ### 題目
-
 # Write a solution to concatenate these two DataFrames vertically into one DataFrame.
 # The result format is in the following example.
-
 # 撰寫一個解決方案，將這兩個 DataFrame 垂直堆疊成一個 DataFrame
 # 結果顯示如下
 
 ### Example 範例
-
 # Input:
 # df1
 # +------------+---------+-----+
@@ -38,7 +34,6 @@
 # | 3          | Taylor  | 15  |
 # | 4          | Georgia | 17  |
 # +------------+---------+-----+
-
 # df2
 # +------------+------+-----+
 # | student_id | name | age |
@@ -46,7 +41,6 @@
 # | 5          | Leo  | 7   |
 # | 6          | Alex | 7   |
 # +------------+------+-----+
-
 # Output:
 # +------------+---------+-----+
 # | student_id | name    | age |
@@ -60,13 +54,10 @@
 # +------------+---------+-----+
 
 ### Explanation 解釋
-
 # The two DataFramess are stacked vertically, and their rows are combined.
-
 # 將兩個 DataFrame 垂直堆疊，並合併行 (rows)
 
 ### Code 程式碼
-
 import pandas as pd
 
 
