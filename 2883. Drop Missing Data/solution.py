@@ -1,59 +1,48 @@
 ## 2883. Drop Missing Data 刪除遺失的數據
 
-# DataFrame customers
+# DataFrame students
 # +-------------+--------+
 # | Column Name | Type   |
 # +-------------+--------+
-# | customer_id | int    |
+# | student_id  | int    |
 # | name        | object |
-# | email       | object |
+# | age         | int    |
 # +-------------+--------+
 
 ### 題目
-
-# There are some duplicate rows in the DataFrame based on the email column.
-# Write a solution to remove these duplicate rows and keep only the first occurrence.
+# There are some rows having missing values in the `name` column.
+# Write a solution to remove the rows with missing values.
 # The result format is in the following example.
 
 ### 中文
-
-# 根據電子郵件列，DataFrame 中存在一些重複的行
-# 編寫一個解決方案來刪除這些重複的行並僅保留第一個出現的行
+# `name` 欄中有一些行存在缺失值
+# 編寫一個解決方案來刪除這些缺失值的行
 # 結果顯示如下
 
 ### Example 範例
-
 # Input:
-# +-------------+---------+---------------------+
-# | customer_id | name    | email               |
-# +-------------+---------+---------------------+
-# | 1           | Ella    | emily@example.com   |
-# | 2           | David   | michael@example.com |
-# | 3           | Zachary | sarah@example.com   |
-# | 4           | Alice   | john@example.com    |
-# | 5           | Finn    | john@example.com    |
-# | 6           | Violet  | alice@example.com   |
-# +-------------+---------+---------------------+
-
+# +------------+---------+-----+
+# | student_id | name    | age |
+# +------------+---------+-----+
+# | 32         | Piper   | 5   |
+# | 217        | None    | 19  |
+# | 779        | Georgia | 20  |
+# | 849        | Willow  | 14  |
+# +------------+---------+-----+
 # Output:
-# +-------------+---------+---------------------+
-# | customer_id | name    | email               |
-# +-------------+---------+---------------------+
-# | 1           | Ella    | emily@example.com   |
-# | 2           | David   | michael@example.com |
-# | 3           | Zachary | sarah@example.com   |
-# | 4           | Alice   | john@example.com    |
-# | 6           | Violet  | alice@example.com   |
-# +-------------+---------+---------------------+
+# +------------+---------+-----+
+# | student_id | name    | age |
+# +------------+---------+-----+
+# | 32         | Piper   | 5   |
+# | 779        | Georgia | 20  |
+# | 849        | Willow  | 14  |
+# +------------+---------+-----+
 
 ### Explanation 解釋
-
-# Alice `customer_id = 4` and Finn `customer_id = 5` both use `john@example.com`, so only the first occurrence of this email is retained.
-
-# Alice `customer_id = 4` 和 Finn `customer_id = 5` 都使用  `john@example.com`，因此只有此電子郵件的第一次出現被保留
+# Student with id 217 havs empty value in the name column, so it will be removed.
+# ID 為 217 的學生在姓名欄位中有一個空值，因此它將被刪除
 
 ### Code 程式碼
-
 import pandas as pd
 
 
