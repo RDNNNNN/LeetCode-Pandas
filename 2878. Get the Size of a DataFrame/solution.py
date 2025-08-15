@@ -12,21 +12,18 @@
 # +-------------+--------+
 
 ### 題目
-
-# Write a solution to calculate and display the number of rows and columns of players.
+# Write a solution to calculate and display the number of rows and columns of `players`.
 # Return the result as an array:
-# [number of rows, number of columns]
+# `[number of rows, number of columns]`
 # The result format is in the following example.
 
 ### 中文
-
-# 撰寫一個解決方案來計算並顯示 players 的行數 (rows) 跟列數 (columns)
+# 撰寫一個解決方案來計算並顯示 `players` 的行數 (rows) 跟列數 (columns)
 # 以列表的形式回傳結果
-# [number of rows, number of columns]
+# `[number of rows, number of columns]`
 # 結果顯示如下
 
 ### Example 範例
-
 # Input:
 # +-----------+----------+-----+-------------+--------------------+
 # | player_id | name     | age | position    | team               |
@@ -42,18 +39,14 @@
 # | 761       | Jack     | 33  | Midfielder  | ManchesterCity     |
 # | 642       | Charlie  | 36  | Center-back | Arsenal            |
 # +-----------+----------+-----+-------------+--------------------+
-
 # Output:
 # [10, 5]
 
 ### Explanation 解釋
-
 # This DataFrame contains 10 rows and 5 columns.
-
 # 這個 DataFrame 包含 10 行 (rows) 5 列 (columns)
 
 ### Code 程式碼
-
 import pandas as pd
 
 
