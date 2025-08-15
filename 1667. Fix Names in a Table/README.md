@@ -22,7 +22,7 @@ user_id 是此表的主鍵（具有唯一值的列）
 
 Write a solution to fix the names so that only the first character is uppercase and the rest are lowercase.
 
-Return the result table ordered by user_id.
+Return the result table ordered by `user_id`.
 
 The result format is in the following example.
 
@@ -30,7 +30,7 @@ The result format is in the following example.
 
 編寫解決方案來修復名稱，以便只有第一個字符是大寫，其餘的是小寫
 
-返回由 `User_id` 排序的結果表
+返回由 `user_id` 排序的結果表
 
 結果顯示如下
 
