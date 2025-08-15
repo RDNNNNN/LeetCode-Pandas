@@ -1,17 +1,15 @@
 ## 2877. Create a DataFrame from List 從列表建立一個 DataFrame
 
-# Write a solution to create a DataFrame from a 2D list called student_data.
+# Write a solution to create a DataFrame from a 2D list called `student_data`.
 # This 2D list contains the IDs and ages of some students.
-# The DataFrame should have two columns, student_id and age, and be in the same order as the original 2D list.
+# The DataFrame should have two columns, `student_id` and `age`, and be in the same order as the original 2D list.
 # The result format is in the following example.
-
-# 撰寫一個解決方案，從名為 student_data 的 2D 列表建立一個 DataFrame
+# 撰寫一個解決方案，從名為 `student_data` 的 2D 列表建立一個 DataFrame
 # 這個 2D 列表包含一些學生的 ID 和年齡
-# DataFrame 應有兩個欄位: student_id 和 age，且順序與原始的 2D 列表相同
+# DataFrame 應有兩個欄位: `student_id` 和 `age`，且順序與原始的 2D 列表相同
 # 結果顯示如下
 
 ### Example 範例
-
 # Input:
 # student_data:
 # [
@@ -20,7 +18,6 @@
 #   [3, 11],
 #   [4, 20]
 # ]
-
 # Output:
 # +------------+-----+
 # | student_id | age |
@@ -32,13 +29,10 @@
 # +------------+-----+
 
 ### Explanation 解釋
-
-# A DataFrame was created on top of student_data, with two columns named student_id and age.
-
-# 在 student_data 之上建立一個 DataFrame，包含一個名為 student_id 和 age 的兩個欄位
+# A DataFrame was created on top of student_data, with two columns named `student_id` and `age`.
+# 在 student_data 之上建立一個 DataFrame，包含一個名為 `student_id` 和 `age` 的兩個欄位
 
 ### Code 程式碼
-
 import pandas as pd
 
 
