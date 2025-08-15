@@ -16,7 +16,7 @@ DataFrame students
 
 Write a solution to correct the errors:
 
-The grade column is stored as floats, convert it to integers.
+The `grade` column is stored as floats, convert it to integers.
 
 The result format is in the following example.
 
@@ -24,7 +24,7 @@ The result format is in the following example.
 
 撰寫一個解決方案來修正錯誤
 
-成績的列 (column) 為浮點數，將其轉為整數
+成績 `grade` 的列 (column) 為浮點數，將其轉為整數
 
 結果顯示如下
 
