@@ -78,14 +78,14 @@ Output:
 ### Explanation 解釋
 
 The mail of user 2 does not have a domain.
-The mail of user 5 has the `#` sign which is not allowed.
+The mail of user 5 has the # sign which is not allowed.
 The mail of user 6 does not have the leetcode domain.
 The mail of user 7 starts with a period.
 
 ### 中文
 
 用戶 2 的郵件沒有網域
-使用者 5 的郵件中有 # 符號，這是不允許的
+用戶 5 的郵件中有 # 符號，這是不允許的
 用戶 6 的郵件沒有 leetcode 網域
 用戶 7 的郵件以句點開頭
 
