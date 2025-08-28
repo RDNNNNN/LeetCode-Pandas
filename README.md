@@ -472,6 +472,51 @@ The result format is in the following example.
 
 ---
 
+### 1873. Calculate Special Bonus 計算特別獎金 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1873.%20Calculate%20Special%20Bonus)
+
+```py
+Table: Employees
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| employee_id | int     |
+| name        | varchar |
+| salary      | int     |
++-------------+---------+
+
+employee_id is the primary key (column with unique values) for this table.
+Each row of this table indicates the employee ID, employee name, and salary.
+
+employee_id 為此表的主鍵 (具有唯一值的列)
+該表的每一行 表示 員工 ID 員工姓名以及薪水
+```
+
+#### 題目
+ 
+Write a solution to calculate the bonus of each employee. 
+
+The bonus of an employee is 100% of their salary if the ID of the employee is an odd number and the employee's name does not start with the character `M`. 
+
+The bonus of an employee is `0` otherwise.
+
+Return the result table ordered by `employee_id`.
+
+The result format is in the following example.
+
+#### 中文
+
+寫一個解決方案計算每個員工的獎金
+
+如果 `employee_id` 為奇數，並且員工的名字不是從角色 `M` 開始的，則員工的獎金是其薪資的 `100％` 
+
+員工的獎勵為 `0`
+
+返回員工訂購的結果表
+
+結果顯示如下
+
+---
+
 ### 2356. Number of Unique Subjects Taught by Each Teacher 每位教師教授的獨特科目數量 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2356.%20Number%20of%20Unique%20Subjects%20Taught%20by%20Each%20Teacher)
 
 ```py
