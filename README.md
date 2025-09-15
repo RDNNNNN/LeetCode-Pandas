@@ -850,6 +850,33 @@ The result format is in the following example.
 
 ---
 
+### 2890. Reshape Data: Melt 重塑數據：融解 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2890.%20Reshape%20Data%20-%20Melt)
+
+```py
+DataFrame report
++-------------+--------+
+| Column Name | Type   |
++-------------+--------+
+| product     | object |
+| quarter_1   | int    |
+| quarter_2   | int    |
+| quarter_3   | int    |
+| quarter_4   | int    |
++-------------+--------+
+```
+
+### 題目
+
+Write a solution to reshape the data so that each row represents sales data for a product in a specific quarter.
+
+The result format is in the following example.
+
+編寫一個解決方案來重塑數據，使每一行代表特定季度產品銷售資料
+
+結果顯示如下
+
+---
+
 ### 3436. Find Valid Emails 尋找有效電子郵件 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/3436.%20Find%20Valid%20Emails)
 
 ```py
