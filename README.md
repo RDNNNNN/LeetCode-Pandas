@@ -784,6 +784,39 @@ The result format is in the following example.
 
 ---
 
+### 2885. Rename Columns 重新命名列 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2885.%20Rename%20Columns)
+
+```py
+DataFrame students
++-------------+--------+
+| Column Name | Type   |
++-------------+--------+
+| id          | int    |
+| first       | object |
+| last        | object |
+| age         | int    |
++-------------+--------+
+```
+
+### 題目
+
+Write a solution to rename the columns as follows:
+
+編寫解決方案來重新命名列，結果顯示如下：
+
+```py
+id to student_id
+first to first_name
+last to last_name
+age to age_in_years
+```
+
+The result format is in the following example.
+
+結果顯示如下
+
+---
+
 ### 2886. Change Data Type 改變資料型別 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2886.%20Change%20Data%20Type)
 
 ```py
