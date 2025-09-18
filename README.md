@@ -136,6 +136,63 @@ The result format is in the following example.
 
 ---
 
+### 1068. Product Sales Analysis I 產品銷售分析 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1068.%20Product%20Sales%20Analysis%20I)
+
+```py
+Table: Sales
++-------------+-------+
+| Column Name | Type  |
++-------------+-------+
+| sale_id     | int   |
+| product_id  | int   |
+| year        | int   |
+| quantity    | int   |
+| price       | int   |
++-------------+-------+
+(sale_id, year) is the primary key (combination of columns with unique values) of this table.
+product_id is a foreign key (reference column) to Product table.
+Each row of this table shows a sale on the product product_id in a certain year.
+Note that the price is per unit.
+
+(sale_id, year) 是此表的主鍵（具有唯一值的列的組合）
+product_id 是 Product 表的外鍵（引用列）
+此表的每一行都顯示了特定年份產品 product_id 的銷售情況
+請注意，價格是每單位的價格
+```
+
+```py
+Table: Product
++--------------+---------+
+| Column Name  | Type    |
++--------------+---------+
+| product_id   | int     |
+| product_name | varchar |
++--------------+---------+
+product_id is the primary key (column with unique values) of this table.
+Each row of this table indicates the product name of each product.
+
+product_id 是此表的主鍵（具有唯一值的欄位）
+此表的每一行表示每個產品的產品名稱
+```
+
+### 題目
+
+Write a solution to report the `product_name`, `year`, and `price` for each `sale_id` in the `Sales` table.
+
+Return the resulting table in any order.
+
+The result format is in the following example.
+
+### 中文
+
+編寫一個解決方案，報告 `Sales` 表中每個 `sale_id` 對應的 `product_name`、`year` 和 `price`
+
+按任意順序傳回結果表
+
+結果顯示如下
+
+---
+
 ### 1148. Article Views I 文章瀏覽量 I [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1148.%20Article%20Views%20I)
 
 ```py
