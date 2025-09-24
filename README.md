@@ -136,6 +136,45 @@ The result format is in the following example.
 
 ---
 
+## 627. Swap Salary 交換薪資 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0627.%20Swap%20Salary)
+
+```py
+Table: Salary
++-------------+----------+
+| Column Name | Type     |
++-------------+----------+
+| id          | int      |
+| name        | varchar  |
+| sex         | ENUM     |
+| salary      | int      |
++-------------+----------+
+id is the primary key (column with unique values) for this table.
+The sex column is ENUM (category) value of type ('m', 'f').
+The table contains information about an employee.
+
+id 是此表的主鍵（具有唯一值的欄位）
+性別列舉是列舉（類別）值，類型為 ('m', 'f')
+該表包含有關員工的資訊
+```
+
+### 題目
+
+Write a solution to swap all `'f'` and `'m'` values (i.e., change all `'f'` values to `'m'` and vice versa) with a **single update statement** and no intermediate temporary tables.
+
+Note that you must write a single update statement, **do not** write any select statement for this problem.
+
+The result format is in the following example.
+
+### 中文
+
+編寫一個解決方案，使用**單一更新語句**交換所有“f”和“m”的值（即將所有“f”值變更為“m”，反之亦然），並且無需中間臨時表
+
+請注意，您必須編寫單一更新語句，**請勿**為此問題編寫任何選擇語句
+
+結果顯示如下
+
+---
+
 ### 1068. Product Sales Analysis I 產品銷售分析 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1068.%20Product%20Sales%20Analysis%20I)
 
 ```py
