@@ -13,6 +13,10 @@ Table: Salary
 id is the primary key (column with unique values) for this table.
 The sex column is ENUM (category) value of type ('m', 'f').
 The table contains information about an employee.
+
+id 是此表的主鍵（具有唯一值的欄位）
+性別列舉是列舉（類別）值，類型為 ('m', 'f')
+該表包含有關員工的資訊
 ```
 
 ### 題目
