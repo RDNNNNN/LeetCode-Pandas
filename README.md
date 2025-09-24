@@ -136,7 +136,7 @@ The result format is in the following example.
 
 ---
 
-## 627. Swap Salary 交換薪資 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0627.%20Swap%20Salary)
+### 627. Swap Salary 交換薪資 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0627.%20Swap%20Salary)
 
 ```py
 Table: Salary
