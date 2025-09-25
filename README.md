@@ -272,6 +272,54 @@ The result format is in the following example.
 
 ---
 
+### **1378. Replace Employee ID With The Unique Identifier 用唯一識別碼替換員工 ID** [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1378.%20Replace%20Employee%20ID%20With%20The%20Unique%20Identifier)
+
+```python
+Table: Employees
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| id            | int     |
+| name          | varchar |
++---------------+---------+
+id is the primary key (column with unique values) for this table.
+Each row of this table contains the id and the name of an employee in a company.
+
+id 是此表的主鍵（具有唯一值的欄位）
+此表的每一行都包含公司員工的 id 和姓名
+```
+
+```python
+Table: EmployeeUNI
++---------------+---------+
+| Column Name   | Type    |
++---------------+---------+
+| id            | int     |
+| unique_id     | int     |
++---------------+---------+
+(id, unique_id) is the primary key (combination of columns with unique values) for this table.
+Each row of this table contains the id and the corresponding unique id of an employee in the company.
+
+(id, unique_id) 是此表的主鍵（具有唯一值的欄位的組合）
+此表的每一行都包含公司中員工的 ID 及其對應的唯一 ID
+```
+
+### 題目
+
+Write a solution to show the **unique ID** of each user, If a user does not have a unique ID replace just show `null`.
+
+Return the result table in **any** order.
+
+The result format is in the following example.
+
+編寫一個解決方案，顯示每個使用者的**唯一 ID**。如果使用者沒有唯一 ID，則直接顯示 `null`
+
+以**任意**順序傳回結果表
+
+結果顯示如下
+
+---
+
 ### 1517. Find Users With Valid E-Mails 尋找有效電子郵件的用戶 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/1517.%20Find%20Users%20With%20Valid%20E-Mails)
 
 ```py
