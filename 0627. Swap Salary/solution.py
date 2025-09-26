@@ -20,8 +20,6 @@
 # Write a solution to swap all `'f'` and `'m'` values (i.e., change all `'f'` values to `'m'` and vice versa) with a **single update statement** and no intermediate temporary tables.
 # Note that you must write a single update statement, **do not** write any select statement for this problem.
 # The result format is in the following example.
-
-### 中文
 # 編寫一個解決方案，使用**單一更新語句**交換所有“f”和“m”的值（即將所有“f”值變更為“m”，反之亦然），並且無需中間臨時表
 # 請注意，您必須編寫單一更新語句，**請勿**為此問題編寫任何選擇語句
 # 結果顯示如下
