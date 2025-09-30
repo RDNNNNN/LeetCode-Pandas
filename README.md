@@ -1027,6 +1027,62 @@ The result format is in the following example.
 
 ---
 
+### **2889. Reshape Data: Pivot 重塑數據: 透視** [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2889.%20Reshape%20Data%20-%20Pivot)
+
+```python
+DataFrameweather
++-------------+--------+
+| Column Name | Type   |
++-------------+--------+
+| city        | object |
+| month       | object |
+| temperature | int    |
++-------------+--------+
+```
+
+### 題目
+
+Write a solution to **pivot** the data so that each row represents temperatures for a specific month, and each city is a separate column.
+
+The result format is in the following example.
+
+編寫一個解決方案來對資料進行**透視**，使每一行代表特定月份的溫度，每個城市作為單獨的列
+
+結果顯示如下
+
+### Example 範例
+
+```python
+Input:
++--------------+----------+-------------+
+| city         | month    | temperature |
++--------------+----------+-------------+
+| Jacksonville | January  | 13          |
+| Jacksonville | February | 23          |
+| Jacksonville | March    | 38          |
+| Jacksonville | April    | 5           |
+| Jacksonville | May      | 34          |
+| ElPaso       | January  | 20          |
+| ElPaso       | February | 6           |
+| ElPaso       | March    | 26          |
+| ElPaso       | April    | 2           |
+| ElPaso       | May      | 43          |
++--------------+----------+-------------+
+
+Output:
++----------+--------+--------------+
+| month    | ElPaso | Jacksonville |
++----------+--------+--------------+
+| April    | 2      | 5            |
+| February | 6      | 23           |
+| January  | 20     | 13           |
+| March    | 26     | 38           |
+| May      | 43     | 34           |
++----------+--------+--------------+
+```
+
+---
+
 ### 2890. Reshape Data: Melt 重塑數據：融解 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/2890.%20Reshape%20Data%20-%20Melt)
 
 ```py
