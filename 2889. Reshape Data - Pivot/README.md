@@ -21,8 +21,10 @@ The result format is in the following example.
 
 結果顯示如下
 
+### Example 範例
+
 ```python
-Example 1:Input:
+Input:
 +--------------+----------+-------------+
 | city         | month    | temperature |
 +--------------+----------+-------------+
