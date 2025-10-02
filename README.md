@@ -1,3 +1,56 @@
+## **175. Combine Two Tables 合併兩個表** [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0175.%20Combine%20Two%20Tables)
+
+Table: `Person`
+
+```python
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| personId    | int     |
+| lastName    | varchar |
+| firstName   | varchar |
++-------------+---------+
+personId is the primary key (column with unique values) for this table.
+This table contains information about the ID of some persons and their first and last names.
+personId是該表的主鍵（唯一識別列）
+表格包含一些人員的ID以及他們的姓名資訊
+```
+
+Table: `Address`
+
+```python
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| addressId   | int     |
+| personId    | int     |
+| city        | varchar |
+| state       | varchar |
++-------------+---------+
+addressId is the primary key (column with unique values) for this table.
+Each row of this table contains information about the city and state of one person with ID = PersonId.
+addressId是該表的主鍵（唯一識別列）。
+該表中的每一行記錄都包含了一個ID為PersonId的使用者的城市和州資訊。
+```
+
+### 題目
+
+Write a solution to report the first name, last name, city, and state of each person in the `Person` table. If the address of a `personId` is not present in the `Address` table, report `null` instead.
+
+Return the result table in **any order**.
+
+The result format is in the following example.
+
+寫一個查詢語句，從 `Person` 表中取得每個人的姓名、城市和州資訊
+
+如果 `Person` 表中某個人的 `personId` 在 `Address` 表中找不到對應的位址信息，則該位址資訊顯示為 `null`
+
+傳回結果表時，結果順序不限
+
+結果顯示如下
+
+---
+
 ### 177. Nth Highest Salary 第 N 高薪 [(連結)](https://github.com/RDNNNNN/LeetCode-Pandas/tree/main/0177.%20Nth%20Highest%20Salary)
 
 ```py
